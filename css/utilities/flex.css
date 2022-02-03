@@ -1,0 +1,31 @@
+.align-i-ctr {
+  align-items: center;
+}
+
+.aling-s-fe {
+  align-self: flex-end;
+}
+
+.flex-direction-col {
+  flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.gap-1p5 {
+  gap: 1.5rem;
+}
+
+.justify-c-ctr {
+  justify-content: center;
+}
+
+.justify-c-sa {
+  justify-content: space-around;
+}
+
+.justify-c-sb {
+  justify-content: space-between;
+}
