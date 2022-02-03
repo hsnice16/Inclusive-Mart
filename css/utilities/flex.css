@@ -2,10 +2,6 @@
   align-items: center;
 }
 
-.aling-s-fe {
-  align-self: flex-end;
-}
-
 .flex-direction-col {
   flex-direction: column;
 }
@@ -14,8 +10,8 @@
   flex-wrap: wrap;
 }
 
-.gap-1p5 {
-  gap: 1.5rem;
+.gap-2p5 {
+  gap: 2.5rem;
 }
 
 .justify-c-ctr {
