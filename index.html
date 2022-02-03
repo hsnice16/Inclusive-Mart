@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Inclusive Mart | My Wishlist</title>
+    <title>Inclusive Mart | Log In to access Your Cart and Wishlist</title>
 
     <!-- Favicon -->
     <link
@@ -65,11 +65,13 @@
         </form>
 
         <div class="align-i-ctr d-flex justify-c-sb">
-          <button class="btn bg-white bg-white-hover translate-y">Log Out</button>
+          <button class="btn bg-white bg-white-hover translate-y">
+            Log In
+          </button>
 
           <button class="badge-btn margin-lr-2 text-white translate-y">
             <i class="fas fa-heart"></i>
-            <span class="badge-count bg-dnd">6</span>
+            <span class="badge-count bg-dnd">0</span>
           </button>
 
           <button class="badge-btn margin-r-1 text-white translate-y">
@@ -81,250 +83,65 @@
     </header>
 
     <main class="container text-slate-600">
-      <section class="padding-3 section-container">
-        <h1 class="font-size-3 margin-tb-2 text-center">My Wishlist</h1>
+      <section class="d-flex padding-3 section-container">
+        <div class="card flex-direction-col margin-auto width-33">
+          <img
+            class="card-vertical-img height-12"
+            src="assets/jpegs/dr-strange.jpg"
+            alt="unsplash dr. strange jpg"
+          />
 
-        <p class="font-size-2 margin-tb-2 text-center">
-          your wishlist is empty till now, <a class="link" href="#">Shop Now</a>
-        </p>
+          <form class="border-r-unset form padding-1-2-3 max-width-100pct">
+            <h1 class="margin-b-2 text-slate-600">Log In</h1>
 
-        <ul class="d-flex flex-wrap gap-2p5 justify-c-ctr margin-tb-3">
-          <li>
-            <div class="card card-vertical width-25">
-              <div class="card-vertical-header">
-                <span class="status-badge text-center width-6p5"
-                  >3+ <i class="fas fa-star"></i
-                ></span>
+            <label class="font-weight-bold" for="email-id">Email Address</label>
+            <input
+              class="bg-unset border-r-unset input margin-lr-0 width-100pct"
+              type="email"
+              name="email-id"
+              id="email-id"
+              placeholder="inclusive.mart@example.com"
+            />
+            <label class="font-weight-bold" for="password">Password</label>
+            <input
+              class="bg-unset border-r-unset input margin-lr-0 width-100pct"
+              type="password"
+              name="password"
+              id="password"
+              placeholder="********"
+            />
 
-                <button class="bg-red-50 card-icon-btn margin-l-auto">
-                  <i class="fas fa-heart margin-auto"></i>
-                </button>
-              </div>
+            <div class="align-i-ctr d-flex justify-c-sb margin-b-1 margin-t-2">
+              <label class="cursor-ptr font-size-1p5" for="remember-me">
+                <input
+                  class="cursor-ptr"
+                  type="checkbox"
+                  name="remember-me"
+                  id="remember-me"
+                />
+                Remember me
+              </label>
 
-              <img
-                class="card-vertical-img"
-                src="assets/jpegs/hulk-bobblehead.jpg"
-                alt="hulk bobblehead jpg"
-              />
-
-              <h1 class="card-head height-3p5">Hulk Bobblehead</h1>
-              <p class="card-text height-7">
-                Elegant Lifestyle Super Hero Incredible Hulk Action Figure
-                Limited Edition, Marvel Comics Character
-              </p>
-
-              <div class="card-vertical-footer margin-t-1">
-                <span class="current-price">
-                  <strong>₹416</strong>
-                </span>
-                <span class="earlier-price">₹1,780</span>
-                <span class="pct-off"><strong>76% off</strong></span>
-              </div>
-
-              <button
-                class="bg-add-cart bg-add-cart-hover btn font-weight-bold text-slate-800"
+              <a
+                class="font-size-1p5 font-weight-bold text-slate-600 text-slate-800-hover"
+                href="#"
+                >Forgt Password?</a
               >
-                Add to Cart
-              </button>
             </div>
-          </li>
 
-          <li>
-            <div class="card card-vertical width-25">
-              <div class="card-vertical-header">
-                <span class="status-badge text-center width-6p5"
-                  >3 <i class="fas fa-star"></i
-                ></span>
+            <button
+              class="border-r-unset btn btn-error-solid btn-squared margin-lr-0 width-100pct"
+            >
+              <i class="fas fa-door-open"></i> Log In
+            </button>
 
-                <button class="bg-red-50 card-icon-btn margin-l-auto">
-                  <i class="fas fa-heart margin-auto"></i>
-                </button>
-              </div>
-
-              <img
-                class="card-vertical-img"
-                src="assets/jpegs/iron-man-bobblehead.jpg"
-                alt="iron man bobblehead jpg"
-              />
-
-              <h1 class="card-head height-3p5">Iron Man Bobblehead</h1>
-              <p class="card-text height-7">
-                Action Figure Marvel Bobble Head for Car Dashboard or Office
-                Desk
-              </p>
-
-              <div class="card-vertical-footer margin-t-1">
-                <span class="current-price">
-                  <strong>₹379</strong>
-                </span>
-                <span class="earlier-price">₹899</span>
-                <span class="pct-off"><strong>58% off</strong></span>
-              </div>
-
-              <button
-                class="bg-add-cart bg-add-cart-hover btn font-weight-bold text-slate-800"
-              >
-                Add to Cart
-              </button>
-            </div>
-          </li>
-
-          <li>
-            <div class="card card-vertical width-25">
-              <div class="card-vertical-header">
-                <span class="status-badge text-center width-6p5"
-                  >4+ <i class="fas fa-star"></i
-                ></span>
-
-                <button class="bg-red-50 card-icon-btn margin-l-auto">
-                  <i class="fas fa-heart margin-auto"></i>
-                </button>
-              </div>
-
-              <img
-                class="card-vertical-img"
-                src="assets/jpegs/marvel-tshirt.jpg"
-                alt="marvel t-shirt for man jpg"
-              />
-
-              <h1 class="card-head height-3p5">
-                Marvel Men's Regular Fit T-Shirt
-              </h1>
-              <p class="card-text height-7">
-                Crew Neck, Half Sleeve regular fit t-shirt for men
-              </p>
-
-              <div class="card-vertical-footer margin-t-1">
-                <span class="current-price">
-                  <strong>₹379</strong>
-                </span>
-                <span class="earlier-price">₹899</span>
-                <span class="pct-off"><strong>58% off</strong></span>
-              </div>
-
-              <button
-                class="bg-add-cart bg-add-cart-hover btn font-weight-bold text-slate-800"
-              >
-                Add to Cart
-              </button>
-            </div>
-          </li>
-
-          <li>
-            <div class="card card-vertical width-25">
-              <div class="card-vertical-header">
-                <span class="status-badge text-center width-6p5"
-                  >4+ <i class="fas fa-star"></i
-                ></span>
-
-                <button class="bg-red-50 card-icon-btn margin-l-auto">
-                  <i class="fas fa-heart margin-auto"></i>
-                </button>
-              </div>
-
-              <img
-                class="card-vertical-img"
-                src="assets/jpegs/boy-tshirt-pack.jpg"
-                alt="marvel t-shirt for boyd jpg"
-              />
-
-              <h1 class="card-head height-3p5">
-                Marvel By Kidsville Boys' T-Shirt
-              </h1>
-              <p class="card-text height-7">Pack of 3</p>
-
-              <div class="card-vertical-footer margin-t-1">
-                <span class="current-price">
-                  <strong>₹679</strong>
-                </span>
-                <span class="earlier-price">₹1799</span>
-                <span class="pct-off"><strong>62% off</strong></span>
-              </div>
-
-              <button
-                class="bg-add-cart bg-add-cart-hover btn font-weight-bold text-slate-800"
-              >
-                Add to Cart
-              </button>
-            </div>
-          </li>
-
-          <li>
-            <div class="card card-vertical width-25">
-              <div class="card-vertical-header">
-                <span class="status-badge text-center width-6p5"
-                  >4+ <i class="fas fa-star"></i
-                ></span>
-
-                <button class="bg-red-50 card-icon-btn margin-l-auto">
-                  <i class="fas fa-heart margin-auto"></i>
-                </button>
-              </div>
-
-              <img
-                class="card-vertical-img"
-                src="assets/jpegs/marvel-tshirt.jpg"
-                alt="marvel t-shirt for man jpg"
-              />
-
-              <h1 class="card-head height-3p5">
-                Marvel Men's Regular Fit T-Shirt
-              </h1>
-              <p class="card-text height-7"></p>
-
-              <div class="card-vertical-footer margin-t-1">
-                <span class="current-price">
-                  <strong>₹379</strong>
-                </span>
-                <span class="earlier-price">₹899</span>
-                <span class="pct-off"><strong>58% off</strong></span>
-              </div>
-
-              <button
-                class="bg-add-cart bg-add-cart-hover btn font-weight-bold text-slate-800"
-              >
-                Add to Cart
-              </button>
-            </div>
-          </li>
-
-          <li>
-            <div class="card card-vertical width-25">
-              <div class="card-vertical-header">
-                <span class="status-badge text-center width-6p5"
-                  >3 <i class="fas fa-star"></i
-                ></span>
-
-                <button class="bg-red-50 card-icon-btn margin-l-auto">
-                  <i class="fas fa-heart margin-auto"></i>
-                </button>
-              </div>
-
-              <img
-                class="card-vertical-img"
-                src="assets/jpegs/iron-man-bobblehead.jpg"
-                alt="iron man bobblehead jpg"
-              />
-
-              <h1 class="card-head height-3p5">Iron Man Bobblehead</h1>
-              <p class="card-text height-7"></p>
-
-              <div class="card-vertical-footer margin-t-1">
-                <span class="current-price">
-                  <strong>₹379</strong>
-                </span>
-                <span class="earlier-price">₹899</span>
-                <span class="pct-off"><strong>58% off</strong></span>
-              </div>
-
-              <button
-                class="bg-add-cart bg-add-cart-hover btn font-weight-bold text-slate-800"
-              >
-                Add to Cart
-              </button>
-            </div>
-          </li>
-        </ul>
+            <a
+              class="d-i-block font-weight-bold margin-t-1 text-center text-slate-600 text-slate-800-hover width-100pct"
+              href="#"
+              >New on Inclusive Mart? Sign Up</a
+            >
+          </form>
+        </div>
       </section>
     </main>
 

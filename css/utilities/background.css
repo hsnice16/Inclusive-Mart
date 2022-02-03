@@ -22,6 +22,10 @@
   background: var(--COLOR-STONE);
 }
 
+.bg-unset {
+  background: unset;
+}
+
 .bg-white {
   background: var(--COLOR-WHITE);
 }

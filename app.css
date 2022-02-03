@@ -13,6 +13,10 @@ html {
   scroll-behavior: smooth;
 }
 
+.cursor-ptr {
+  cursor: pointer;
+}
+
 /** Container **/
 
 .container {

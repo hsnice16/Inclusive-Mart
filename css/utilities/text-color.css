@@ -10,6 +10,10 @@
   color: var(--COLOR-SLATE-800);
 }
 
+.text-slate-800-hover:hover {
+  color: var(--COLOR-SLATE-800);
+}
+
 .text-white {
   color: var(--COLOR-WHITE);
 }
