@@ -1,13 +1,5 @@
 @import url("css/main.css");
 
-:root {
-  --COLOR-ADD-CART: #ffd814;
-  --COLOR-ADD-CART-HOVER: #f4cf13;
-
-  --COLOR-SLATE-800: #1e293b;
-  --COLOR-STONE: #333;
-}
-
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
