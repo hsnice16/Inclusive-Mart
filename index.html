@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Inclusive Mart | My Wishlist</title>
+    <title>Inclusive Mart | Log In to access Your Cart and Wishlist</title>
 
     <!-- Favicon -->
     <link
@@ -48,6 +49,16 @@
           </a>
         </div>
 
+
+        <div class="align-i-ctr flex justify-c-sb">
+          <button class="btn bg-white bg-white-hover translate-y">Log Out</button>
+
+          <button class="badge-btn mx-2 text-white translate-y">
+            <i class="fas fa-heart"></i>
+            <span class="badge-count bg-red-500">6</span>
+          </button>
+
+
         <form
           class="align-i-ctr bg-white border-r-10 flex fs-1p5 h-3p5 justify-c-sb overflow-hidden px-1"
         >
@@ -65,12 +76,15 @@
         </form>
 
         <div class="align-i-ctr flex justify-c-sb">
-          <button class="btn bg-white bg-white-hover translate-y">Log Out</button>
+          <button class="btn bg-white bg-white-hover translate-y">
+            Log In
+          </button>
 
           <button class="badge-btn mx-2 text-white translate-y">
             <i class="fas fa-heart"></i>
-            <span class="badge-count bg-red-500">6</span>
+            <span class="badge-count bg-red-500">0</span>
           </button>
+
 
           <button class="badge-btn mr-1 text-white translate-y">
             <i class="fas fa-shopping-cart"></i>
@@ -81,6 +95,7 @@
     </header>
 
     <main class="container text-slate-600">
+
       <section class="p-3 section-container">
         <h1 class="fs-3 my-2 text-center">My Wishlist</h1>
 
@@ -325,7 +340,68 @@
             </div>
           </li>
         </ul>
-      </section>
+
+      <section class="flex p-3 section-container">
+        <div class="card flex-direction-col m-auto w-33">
+          <img
+            class="card-vertical-img h-12"
+            src="assets/jpegs/dr-strange.jpg"
+            alt="unsplash dr. strange jpg"
+          />
+
+          <form class="border-r-unset form p-2 max-w-100pct">
+            <h1 class="mb-2 text-slate-600">Log In</h1>
+
+            <label class="fw-bold" for="email-id">Email Address</label>
+            <input
+              class="bg-unset border-r-unset input mx-0 w-100pct"
+              type="email"
+              name="email-id"
+              id="email-id"
+              placeholder="inclusive.mart@example.com"
+            />
+            <label class="fw-bold" for="password">Password</label>
+            <input
+              class="bg-unset border-r-unset input mx-0 w-100pct"
+              type="password"
+              name="password"
+              id="password"
+              placeholder="********"
+            />
+
+            <div class="align-i-ctr flex justify-c-sb mb-1 mt-2">
+              <label class="cursor-ptr fs-1p5" for="remember-me">
+                <input
+                  class="cursor-ptr"
+                  type="checkbox"
+                  name="remember-me"
+                  id="remember-me"
+                />
+                Remember me
+              </label>
+
+              <a
+                class="fs-1p5 fw-bold text-slate-600 text-slate-800-hover"
+                href="#"
+                >Forgot Password?</a
+              >
+            </div>
+
+            <button
+              class="border-r-unset btn btn-error-solid btn-squared mx-0 w-100pct"
+            >
+              <i class="fas fa-door-open"></i> Log In
+            </button>
+
+            <a
+              class="inline-block fw-bold mt-1 text-center text-slate-600 text-slate-800-hover w-100pct"
+              href="#"
+              >New on Inclusive Mart? Sign Up</a
+            >
+          </form>
+        </div>
+
+        </section>
     </main>
 
     <footer class="bg-red-50">
