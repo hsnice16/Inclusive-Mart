@@ -63,3 +63,17 @@ header {
   left: 0;
   width: 100%;
 }
+
+/** Utilities **/
+
+.w-4 {
+  width: 4rem;
+}
+
+.w-38 {
+  width: 45rem;
+}
+
+.fs-1p2 {
+  font-size: 1.2rem;
+}
