@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Inclusive Mart | Log In to access Your Cart and Wishlist</title>
+    <title>Inclusive Mart | new here? Sign Up</title>
 
     <!-- Favicon -->
     <link
@@ -84,15 +84,39 @@
 
     <main class="container text-slate-600">
       <section class="flex p-3 section-container">
-        <div class="card flex-direction-col m-auto w-33">
+        <div class="card m-auto w-38">
           <img
-            class="card-vertical-img h-12"
+            class="w-4"
             src="assets/jpegs/dr-strange.jpg"
             alt="unsplash dr. strange jpg"
           />
 
           <form class="border-r-unset form p-2 max-w-100pct">
-            <h1 class="mb-2 text-slate-600">Log In</h1>
+            <h1 class="mb-2 text-slate-600">Sign Up</h1>
+
+            <div class="flex">
+              <div class="mr-0p5">
+                <label class="fw-bold" for="first-name"> First Name </label>
+                <input
+                  class="bg-unset border-r-unset input mx-0 w-100pct"
+                  type="text"
+                  name="first-name"
+                  id="first-name"
+                  placeholder="Inclusive"
+                />
+              </div>
+
+              <div class="ml-0p5">
+                <label class="fw-bold" for="last-name">Last Name</label>
+                <input
+                  class="bg-unset border-r-unset input mx-0 w-100pct"
+                  type="text"
+                  name="last-name"
+                  id="last-name"
+                  placeholder="Mart"
+                />
+              </div>
+            </div>
 
             <label class="fw-bold" for="email-id">Email Address</label>
             <input
@@ -104,42 +128,49 @@
             />
 
             <label class="fw-bold" for="password">Password</label>
-            <input
-              class="bg-unset border-r-unset input mx-0 w-100pct"
-              type="password"
-              name="password"
-              id="password"
-              placeholder="********"
-            />
-
-            <div class="align-i-ctr flex justify-c-sb mb-1 mt-2">
-              <label class="cursor-ptr fs-1p5" for="remember-me">
-                <input
-                  class="cursor-ptr"
-                  type="checkbox"
-                  name="remember-me"
-                  id="remember-me"
-                />
-                Remember me
-              </label>
-
-              <a
-                class="fs-1p5 fw-bold text-slate-600 text-slate-800-hover"
-                href="#"
-                >Forgot Password?</a
-              >
+            <div class="bg-unset border-r-unset flex input mx-0 p-0 w-100pct">
+              <input
+                class="bg-unset border-none border-r-unset input m-0 pr-0"
+                type="password"
+                name="password"
+                id="password"
+                placeholder="********"
+              />
+              <button class="bg-white border-none px-0p5">
+                <i class="far fa-eye-slash"></i>
+              </button>
             </div>
+
+            <label class="fw-bold" for="confirm-password"
+              >Confirm Password</label
+            >
+            <div class="bg-unset border-r-unset flex input mx-0 p-0 w-100pct">
+              <input
+                class="bg-unset border-none border-r-unset input m-0 pr-0"
+                type="password"
+                id="confirm-password"
+                placeholder="********"
+              />
+              <button class="bg-white border-none px-0p5">
+                <i class="far fa-eye"></i>
+              </button>
+            </div>
+
+            <span class="block fs-1p2 mb-1 mt-2">
+              By continuing, you agree to Inclusive Mart's Terms of Use and
+              Privacy Policy.
+            </span>
 
             <button
               class="border-r-unset btn btn-error-solid btn-squared mx-0 w-100pct"
             >
-              <i class="fas fa-door-open"></i> Log In
+              Create New Account
             </button>
 
             <a
               class="inline-block fw-bold mt-1 text-center text-slate-600 text-slate-800-hover w-100pct"
-              href="signup.html"
-              >New on Inclusive Mart? Sign Up</a
+              href="index.html"
+              >Already using Inclusive Mart? Log In</a
             >
           </form>
         </div>
