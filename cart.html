@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inclusive Mart | My Cart</title>
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/brand-logos/logo-bg-white.png"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Posh UI Library -->
+    <link
+      rel="stylesheet"
+      href="https://poshui-components.netlify.app/css/main.css"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="app.css" />
+  </head>
+  <body class="bg-slate-50 fs-1p6">
+    <header class="bg-stone">
+      <div class="align-i-ctr container flex justify-c-sb py-1 px-2">
+        <div class="align-i-ctr flex justify-c-sb">
+          <img
+            class="img-brand-logo"
+            src="assets/brand-logos/logo-bg-stone.png"
+            alt="flaticon cart logo"
+          />
+
+          <a class="flex flex-direction-col ml-1" href="index.html">
+            <span class="fs-1p7 text-white">Inclusive</span>
+            <span class="mart-text text-red-500">Mart</span>
+          </a>
+        </div>
+
+        <form
+          class="align-i-ctr bg-white border-r-10 flex fs-1p5 h-3p5 justify-c-sb overflow-hidden px-1"
+        >
+          <input
+            class="border-none fs-1p6 outline-none p-0p5 text-slate-800 w-25"
+            type="text"
+            placeholder="search for product"
+          />
+          <button
+            class="bg-red-500-hover btn btn-error-solid h-100pct mr-n1 py-0p5 px-1p5"
+            type="submit"
+          >
+            <i class="fas fa-search"></i>
+          </button>
+        </form>
+
+        <div class="align-i-ctr flex justify-c-sb">
+          <button class="btn bg-white bg-white-hover translate-y">
+            Log Out
+          </button>
+
+          <a href="wishlist.html" class="badge-btn mx-2 text-white translate-y">
+            <i class="fas fa-heart"></i>
+            <span class="badge-count bg-red-500">0</span>
+          </a>
+
+          <a href="cart.html" class="badge-btn mr-1 text-white translate-y">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="badge-count bg-red-500">3</span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main class="container text-slate-600">
+      <section class="p-3 section-container">
+        <h1 class="fs-3 my-2 text-center">My Cart</h1>
+
+        <p class="fs-2 my-2 text-center">
+          your cart is empty till now, <a class="link" href="#">Shop Now</a>
+        </p>
+
+        <div
+          class="align-i-ctr-md flex flex-wrap flex-col-reverse-md justify-c-sa my-3"
+        >
+          <ul class="flex flex-direction-col p-2">
+            <li class="mb-1">
+              <div class="card shadow-light w-45">
+                <img
+                  class="w-20"
+                  src="assets/jpegs/hulk-bobblehead.jpg"
+                  alt="hulk bobblehead jpg"
+                />
+
+                <div class="flex flex-direction-col p-3">
+                  <h1 class="fs-2">Hulk Bobblehead</h1>
+
+                  <div class="my-1">
+                    <span class="current-price fs-2 ml-0">
+                      <strong>₹416</strong>
+                    </span>
+                    <span class="earlier-price">₹1,780</span>
+                  </div>
+
+                  <span class="pct-off ml-0"><strong>76% off</strong></span>
+
+                  <div class="align-i-ctr flex">
+                    Quantity:
+                    <button
+                      class="bg-slate-300-hover border-r-10 border-thin border-solid border-slate-300 fs-1p2 mx-0p5 p-0p5 text-slate-800"
+                    >
+                      <i class="fas fa-minus"></i>
+                    </button>
+                    <input
+                      class="bg-unset border-r-unset input mx-0 p-0p5 w-4 text-center"
+                      type="number"
+                      value="1"
+                      min="1"
+                    />
+                    <button
+                      class="bg-slate-300-hover border-r-10 border-thin border-solid border-slate-300 fs-1p2 mx-0p5 p-0p5 text-slate-800"
+                    >
+                      <i class="fas fa-plus"></i>
+                    </button>
+                  </div>
+
+                  <button
+                    class="btn btn-secondary-outline mx-0 py-0p5 w-100pct"
+                  >
+                    Remove from Cart
+                  </button>
+                  <button
+                    class="btn btn-secondary-solid border-thin border-solid border-slate-500 border-slate-600-hover mx-0 py-0p5 w-100pct"
+                  >
+                    Move to Wishlist
+                  </button>
+                </div>
+              </div>
+            </li>
+
+            <li class="my-1">
+              <div class="card shadow-light w-45">
+                <img
+                  class="w-20"
+                  src="assets/jpegs/marvel-tshirt.jpg"
+                  alt="marvel t-shirt for man jpg"
+                />
+
+                <div class="flex flex-direction-col p-3">
+                  <h1 class="fs-2">Marvel Men's Regular Fit T-Shirt</h1>
+
+                  <div class="my-1">
+                    <span class="current-price fs-2 ml-0">
+                      <strong>₹399</strong>
+                    </span>
+                    <span class="earlier-price">₹899</span>
+                  </div>
+
+                  <span class="pct-off ml-0"><strong>58% off</strong></span>
+
+                  <div class="align-i-ctr flex">
+                    Quantity:
+                    <button
+                      class="bg-slate-300-hover border-r-10 border-thin border-solid border-slate-300 fs-1p2 mx-0p5 p-0p5 text-slate-800"
+                    >
+                      <i class="fas fa-minus"></i>
+                    </button>
+                    <input
+                      class="bg-unset border-r-unset input mx-0 p-0p5 w-4 text-center"
+                      type="number"
+                      value="1"
+                      min="1"
+                    />
+                    <button
+                      class="bg-slate-300-hover border-r-10 border-thin border-solid border-slate-300 fs-1p2 mx-0p5 p-0p5 text-slate-800"
+                    >
+                      <i class="fas fa-plus"></i>
+                    </button>
+                  </div>
+
+                  <button
+                    class="btn btn-secondary-outline mx-0 py-0p5 w-100pct"
+                  >
+                    Remove from Cart
+                  </button>
+                  <button
+                    class="btn btn-secondary-solid border-thin border-solid border-slate-500 border-slate-600-hover mx-0 py-0p5 w-100pct"
+                  >
+                    Move to Wishlist
+                  </button>
+                </div>
+              </div>
+            </li>
+
+            <li class="my-1">
+              <div class="card shadow-light w-45">
+                <img
+                  class="w-20"
+                  src="assets/jpegs/boy-tshirt-pack.jpg"
+                  alt="marvel t-shirt for boys jpg"
+                />
+
+                <div class="flex flex-direction-col p-3">
+                  <h1 class="fs-2">Marvel By Kidsville Boys' T-Shirt</h1>
+
+                  <div class="my-1">
+                    <span class="current-price fs-2 ml-0">
+                      <strong>₹679</strong>
+                    </span>
+                    <span class="earlier-price">₹1799</span>
+                  </div>
+
+                  <span class="pct-off ml-0"><strong>62% off</strong></span>
+
+                  <div class="align-i-ctr flex">
+                    Quantity:
+                    <button
+                      class="bg-slate-300-hover border-r-10 border-thin border-solid border-slate-300 fs-1p2 mx-0p5 p-0p5 text-slate-800"
+                    >
+                      <i class="fas fa-minus"></i>
+                    </button>
+                    <input
+                      class="bg-unset border-r-unset input mx-0 p-0p5 w-4 text-center"
+                      type="number"
+                      value="1"
+                      min="1"
+                    />
+                    <button
+                      class="bg-slate-300-hover border-r-10 border-thin border-solid border-slate-300 fs-1p2 mx-0p5 p-0p5 text-slate-800"
+                    >
+                      <i class="fas fa-plus"></i>
+                    </button>
+                  </div>
+
+                  <button
+                    class="btn btn-secondary-outline mx-0 py-0p5 w-100pct"
+                  >
+                    Remove from Cart
+                  </button>
+                  <button
+                    class="btn btn-secondary-solid border-thin border-solid border-slate-500 border-slate-600-hover mx-0 py-0p5 w-100pct"
+                  >
+                    Move to Wishlist
+                  </button>
+                </div>
+              </div>
+            </li>
+          </ul>
+
+          <div class="p-2">
+            <div class="card flex-direction-col p-3 shadow-light w-45">
+              <h2
+                class="border-b-thin border-b-solid border-slate-300 fs-1p7 mb-1 pb-1"
+              >
+                PRICE DETAILS
+              </h2>
+
+              <div class="align-i-ctr flex justify-c-sb mt-1">
+                <span class="fw-bold">Price (3 items)</span>
+                <span>₹ 4,478</span>
+              </div>
+              <div class="align-i-ctr flex justify-c-sb my-1">
+                <span class="fw-bold">Discount</span> <span>₹ 2,984</span>
+              </div>
+              <div class="align-i-ctr flex justify-c-sb mb-1">
+                <span class="fw-bold">Delivery Charges</span>
+                <span>₹ 500</span>
+              </div>
+
+              <div
+                class="align-i-ctr border-y-thin border-y-solid border-slate-300 flex justify-c-sb py-1 my-1"
+              >
+                <h1 class="fs-1p7">TOTAL AMOUNT</h1>
+                <span>₹ 1,994</span>
+              </div>
+
+              <p class="my-1">You will save ₹ 2,984 on this purchase</p>
+
+              <button
+                class="bg-add-cart bg-add-cart-hover btn fw-bold mx-0 text-slate-800"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-red-50">
+      <div class="container flex flex-wrap justify-c-sa py-1p5 px-2">
+        <div>
+          <h3 class="my-1 text-slate-800">Quick Links</h3>
+
+          <ul class="mx-1">
+            <li>
+              <a class="link" href="#">Home</a>
+            </li>
+            <li class="my-1">
+              <a class="link" href="#">Products</a>
+            </li>
+            <li>
+              <a class="link" href="cart.html">My Cart</a>
+            </li>
+            <li class="my-1">
+              <a class="link" href="wishlist.html">My Wishlist</a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="my-1 text-slate-800">Connect with me</h3>
+
+          <ul class="flex">
+            <li class="mx-1 translate-y">
+              <a
+                href="https://twitter.com/hsnice16"
+                class="fs-2 link"
+                target="_blank"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </li>
+            <li class="mx-1 translate-y">
+              <a
+                href="https://github.com/hsnice16/"
+                class="fs-2 link"
+                target="_blank"
+                ><i class="fab fa-github"></i
+              ></a>
+            </li>
+            <li class="mx-1 translate-y">
+              <a
+                href="https://www.linkedin.com/in/hsnice16/"
+                target="_blank"
+                class="fs-2 link"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </li>
+            <li class="mx-1 translate-y">
+              <a
+                href="https://www.instagram.com/hsnice16/"
+                target="_blank"
+                class="fs-2 link"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
