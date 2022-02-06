@@ -76,315 +76,776 @@
 
           <a href="cart.html" class="badge-btn mr-1 text-white translate-y">
             <i class="fas fa-shopping-cart"></i>
-            <span class="badge-count bg-red-500">3</span>
+            <span class="badge-count bg-red-500">0</span>
           </a>
         </div>
       </div>
     </header>
 
-    <div class="container text-slate-600">
-      <div class="flex section-container">
-        <aside class="basis-28 pt-3">
-          <div
-            class="bg-white border-thin border-slate-300 border-solid border-r-0p2 my-2 pb-3"
-          >
-            <div
-              class="align-i-ctr border-bottom-thin border-slate-300 border-bottom-solid flex p-2"
+    <div class="container flex text-slate-600">
+      <aside class="bg-white w-45 pb-3">
+        <div
+          class="align-i-ctr border-bottom-thin border-slate-300 border-bottom-solid flex p-2"
+        >
+          <h2 class="fs-2">Filters</h2>
+          <span class="link cursor-ptr fw-normal ml-auto"> Clear All </span>
+        </div>
+
+        <ul class="border-bottom-thin border-slate-300 border-bottom-solid p-2">
+          <h3 class="mb-2">Sort by</h3>
+
+          <li class="my-0p5 ml-1">
+            <label class="cursor-ptr" for="low-to-high">
+              <input
+                class="cursor-ptr mr-1"
+                type="radio"
+                name="price"
+                id="low-to-high"
+                value="Low to High"
+              />
+              Price - Low to High</label
             >
-              <h2 class="fs-2">Filters</h2>
-              <span class="link cursor-ptr fw-normal ml-auto"> Clear All </span>
-            </div>
+          </li>
 
-            <ul
-              class="border-bottom-thin border-slate-300 border-bottom-solid p-2"
+          <li class="my-0p5 ml-1">
+            <label class="cursor-ptr" for="high-to-low">
+              <input
+                class="cursor-ptr mr-1"
+                type="radio"
+                name="price"
+                id="high-to-low"
+                value="High to Low"
+              />
+              Price - High to Low</label
             >
-              <h3 class="mb-2">Sort by</h3>
+          </li>
+        </ul>
 
-              <li class="my-0p5 ml-1">
-                <label class="cursor-ptr" for="low-to-high">
-                  <input
-                    class="cursor-ptr mr-1"
-                    type="radio"
-                    name="price"
-                    id="low-to-high"
-                    value="Low to High"
-                  />
-                  Price - Low to High</label
-                >
-              </li>
+        <ul class="border-bottom-thin border-slate-300 border-bottom-solid p-2">
+          <h3 class="mb-2">Category</h3>
 
-              <li class="my-0p5 ml-1">
-                <label class="cursor-ptr" for="high-to-low">
-                  <input
-                    class="cursor-ptr mr-1"
-                    type="radio"
-                    name="price"
-                    id="high-to-low"
-                    value="High to Low"
-                  />
-                  Price - High to Low</label
-                >
-              </li>
-            </ul>
-
-            <ul
-              class="border-bottom-thin border-slate-300 border-bottom-solid p-2"
+          <li class="my-0p5 ml-1">
+            <label class="cursor-ptr" for="bobbleheads">
+              <input
+                class="cursor-ptr mr-1"
+                type="checkbox"
+                name="category"
+                id="bobbleheads"
+                value="Bobblehead's"
+              />
+              Bobblehead's</label
             >
-              <h3 class="mb-2">Category</h3>
+          </li>
 
-              <li class="my-0p5 ml-1">
-                <label class="cursor-ptr" for="bobbleheads">
-                  <input
-                    class="cursor-ptr mr-1"
-                    type="checkbox"
-                    name="category"
-                    id="bobbleheads"
-                    value="Bobblehead's"
-                  />
-                  Bobblehead's</label
-                >
-              </li>
+          <li class="my-0p5 ml-1">
+            <label class="cursor-ptr" for="mens-clothing">
+              <input
+                class="cursor-ptr mr-1"
+                type="checkbox"
+                name="category"
+                id="mens-clothing"
+                value="Men's Clothing"
+              />
+              Men's Clothing</label
+            >
+          </li>
 
-              <li class="my-0p5 ml-1">
-                <label class="cursor-ptr" for="mens-clothing">
-                  <input
-                    class="cursor-ptr mr-1"
-                    type="checkbox"
-                    name="category"
-                    id="mens-clothing"
-                    value="Men's Clothing"
-                  />
-                  Men's Clothing</label
-                >
-              </li>
+          <li class="my-0p5 ml-1">
+            <label class="cursor-ptr" for="kids-clothing">
+              <input
+                class="cursor-ptr mr-1"
+                type="checkbox"
+                name="category"
+                id="kids-clothing"
+                value="Kid's Clothing"
+              />
+              Kid's Clothing</label
+            >
+          </li>
+        </ul>
 
-              <li class="my-0p5 ml-1">
-                <label class="cursor-ptr" for="kids-clothing">
-                  <input
-                    class="cursor-ptr mr-1"
-                    type="checkbox"
-                    name="category"
-                    id="kids-clothing"
-                    value="Kid's Clothing"
-                  />
-                  Kid's Clothing</label
-                >
-              </li>
-            </ul>
+        <ul class="p-2">
+          <h3 class="mb-2">Ratings</h3>
 
-            <ul class="p-2">
-              <h3 class="mb-2">Ratings</h3>
+          <li class="flex justify-c-sb my-0p5 ml-1">
+            <span class="fs-1p5 fw-bold">1</span>
+            <span class="fs-1p5 fw-bold">2</span>
+            <span class="fs-1p5 fw-bold">3</span>
+            <span class="fs-1p5 fw-bold">4</span>
+            <span class="fs-1p5 fw-bold">5</span>
+          </li>
 
-              <li class="flex justify-c-sb my-0p5 ml-1">
-                <span class="fs-1p5 fw-bold">1</span>
-                <span class="fs-1p5 fw-bold">2</span>
-                <span class="fs-1p5 fw-bold">3</span>
-                <span class="fs-1p5 fw-bold">4</span>
-                <span class="fs-1p5 fw-bold">5</span>
-              </li>
+          <li class="my-0p5 ml-1">
+            <input
+              type="range"
+              min="1"
+              max="5"
+              value="2"
+              step="0.1"
+              class="cursor-ptr w-100pct"
+            />
+          </li>
+        </ul>
+      </aside>
 
-              <li class="my-0p5 ml-1">
-                <input
-                  type="range"
-                  min="1"
-                  max="5"
-                  value="2"
-                  step="0.1"
-                  class="cursor-ptr w-100pct"
+      <main>
+        <section class="p-3">
+          <h1 class="fs-3 my-2">Bobblehead's</h1>
+
+          <ul class="flex flex-wrap gap-2p5 my-3">
+            <li>
+              <div class="card overflow-hidden card-vertical shadow-light w-25">
+                <div class="card-vertical-header">
+                  <span class="status-badge text-center w-6p5"
+                    >3+ <i class="fas fa-star"></i
+                  ></span>
+
+                  <button class="bg-red-50 card-icon-btn ml-auto">
+                    <i class="fas fa-heart m-auto"></i>
+                  </button>
+                </div>
+
+                <img
+                  class="card-vertical-img"
+                  src="assets/jpegs/hulk-bobblehead.jpg"
+                  alt="hulk bobblehead jpg"
                 />
-              </li>
-            </ul>
-          </div>
-        </aside>
 
-        <main class="grow-1">
-          <section class="p-3">
-            <h1 class="fs-3 my-2">Bobblehead's</h1>
+                <h2 class="card-head fs-2 h-3p5">Hulk Bobblehead</h2>
+                <p class="card-text h-7">
+                  Elegant Lifestyle Super Hero Incredible Hulk Action Figure
+                  Limited Edition, Marvel Comics Character
+                </p>
 
-            <ul class="flex flex-wrap gap-2p5 my-3">
-              <li>
-                <div
-                  class="card overflow-hidden card-vertical shadow-light w-25"
+                <div class="card-vertical-footer mt-1">
+                  <span class="current-price">
+                    <strong>₹416</strong>
+                  </span>
+                  <span class="earlier-price">₹1,780</span>
+                  <span class="pct-off"><strong>76% off</strong></span>
+                </div>
+
+                <button
+                  class="bg-add-cart bg-add-cart-hover btn m-0 fw-bold text-slate-800"
                 >
-                  <div class="card-vertical-header">
-                    <span class="status-badge text-center w-6p5"
-                      >3+ <i class="fas fa-star"></i
-                    ></span>
+                  Add to Cart
+                </button>
+              </div>
+            </li>
 
-                    <button class="bg-red-50 card-icon-btn ml-auto">
-                      <i class="fas fa-heart m-auto"></i>
-                    </button>
-                  </div>
+            <li>
+              <div class="card overflow-hidden card-vertical shadow-light w-25">
+                <div class="card-vertical-header">
+                  <span class="status-badge text-center w-6p5"
+                    >3 <i class="fas fa-star"></i
+                  ></span>
 
-                  <img
-                    class="card-vertical-img"
-                    src="assets/jpegs/hulk-bobblehead.jpg"
-                    alt="hulk bobblehead jpg"
-                  />
-
-                  <h2 class="card-head fs-2 h-3p5">Hulk Bobblehead</h2>
-                  <p class="card-text h-7">
-                    Elegant Lifestyle Super Hero Incredible Hulk Action Figure
-                    Limited Edition, Marvel Comics Character
-                  </p>
-
-                  <div class="card-vertical-footer mt-1">
-                    <span class="current-price">
-                      <strong>₹416</strong>
-                    </span>
-                    <span class="earlier-price">₹1,780</span>
-                    <span class="pct-off"><strong>76% off</strong></span>
-                  </div>
-
-                  <button
-                    class="bg-add-cart bg-add-cart-hover btn m-0 fw-bold text-slate-800"
-                  >
-                    Add to Cart
+                  <button class="card-icon-btn ml-auto">
+                    <i class="far fa-heart m-auto"></i>
                   </button>
                 </div>
-              </li>
 
-              <li>
-                <div
-                  class="card overflow-hidden card-vertical shadow-light w-25"
+                <img
+                  class="card-vertical-img"
+                  src="assets/jpegs/iron-man-bobblehead.jpg"
+                  alt="iron man bobblehead jpg"
+                />
+
+                <h2 class="card-head fs-2 h-3p5">Iron Man Bobblehead</h2>
+                <p class="card-text h-7">
+                  Action Figure Marvel Bobble Head for Car Dashboard or Office
+                  Desk
+                </p>
+
+                <div class="card-vertical-footer mt-1">
+                  <span class="current-price">
+                    <strong>₹379</strong>
+                  </span>
+                  <span class="earlier-price">₹899</span>
+                  <span class="pct-off"><strong>58% off</strong></span>
+                </div>
+
+                <button
+                  class="bg-add-cart-dark bg-add-cart-hover btn m-0 fw-bold text-slate-800"
                 >
-                  <div class="card-vertical-header">
-                    <span class="status-badge text-center w-6p5"
-                      >3 <i class="fas fa-star"></i
-                    ></span>
+                  Go to Cart
+                </button>
+              </div>
+            </li>
 
-                    <button class="card-icon-btn ml-auto">
-                      <i class="far fa-heart m-auto"></i>
-                    </button>
-                  </div>
+            <li>
+              <div class="card overflow-hidden card-vertical shadow-light w-25">
+                <div class="card-vertical-header">
+                  <span class="status-badge text-center w-6p5"
+                    >3+ <i class="fas fa-star"></i
+                  ></span>
 
-                  <img
-                    class="card-vertical-img"
-                    src="assets/jpegs/iron-man-bobblehead.jpg"
-                    alt="iron man bobblehead jpg"
-                  />
-
-                  <h2 class="card-head fs-2 h-3p5">Iron Man Bobblehead</h2>
-                  <p class="card-text h-7">
-                    Action Figure Marvel Bobble Head for Car Dashboard or Office
-                    Desk
-                  </p>
-
-                  <div class="card-vertical-footer mt-1">
-                    <span class="current-price">
-                      <strong>₹379</strong>
-                    </span>
-                    <span class="earlier-price">₹899</span>
-                    <span class="pct-off"><strong>58% off</strong></span>
-                  </div>
-
-                  <button
-                    class="bg-add-cart-dark bg-add-cart-hover btn m-0 fw-bold text-slate-800"
-                  >
-                    Go to Cart
+                  <button class="bg-red-50 card-icon-btn ml-auto">
+                    <i class="fas fa-heart m-auto"></i>
                   </button>
                 </div>
-              </li>
-            </ul>
-          </section>
 
-          <section class="p-3">
-            <h1 class="fs-3 my-2">Men's Clothing</h1>
+                <img
+                  class="card-vertical-img"
+                  src="assets/jpegs/hulk-bobblehead.jpg"
+                  alt="hulk bobblehead jpg"
+                />
 
-            <ul class="flex flex-wrap gap-2p5 my-3">
-              <li>
-                <div
-                  class="card overflow-hidden card-vertical shadow-light w-25"
+                <h2 class="card-head fs-2 h-3p5">Hulk Bobblehead</h2>
+                <p class="card-text h-7">
+                  Elegant Lifestyle Super Hero Incredible Hulk Action Figure
+                  Limited Edition, Marvel Comics Character
+                </p>
+
+                <div class="card-vertical-footer mt-1">
+                  <span class="current-price">
+                    <strong>₹416</strong>
+                  </span>
+                  <span class="earlier-price">₹1,780</span>
+                  <span class="pct-off"><strong>76% off</strong></span>
+                </div>
+
+                <button
+                  class="bg-add-cart bg-add-cart-hover btn m-0 fw-bold text-slate-800"
                 >
-                  <div class="card-vertical-header">
-                    <span class="status-badge text-center w-6p5"
-                      >4+ <i class="fas fa-star"></i
-                    ></span>
+                  Add to Cart
+                </button>
+              </div>
+            </li>
 
-                    <button class="card-icon-btn ml-auto">
-                      <i class="far fa-heart m-auto"></i>
-                    </button>
-                  </div>
+            <li>
+              <div class="card overflow-hidden card-vertical shadow-light w-25">
+                <div class="card-vertical-header">
+                  <span class="status-badge text-center w-6p5"
+                    >3 <i class="fas fa-star"></i
+                  ></span>
 
-                  <img
-                    class="card-vertical-img"
-                    src="assets/jpegs/marvel-tshirt.jpg"
-                    alt="marvel t-shirt for man jpg"
-                  />
-
-                  <h2 class="card-head fs-2 h-3p5">
-                    Marvel Men's Regular Fit T-Shirt
-                  </h2>
-                  <p class="card-text h-7">
-                    Crew Neck, Half Sleeve regular fit t-shirt for men
-                  </p>
-
-                  <div class="card-vertical-footer mt-1">
-                    <span class="current-price">
-                      <strong>₹379</strong>
-                    </span>
-                    <span class="earlier-price">₹899</span>
-                    <span class="pct-off"><strong>58% off</strong></span>
-                  </div>
-
-                  <button
-                    class="bg-add-cart bg-add-cart-hover btn fw-bold m-0 text-slate-800"
-                  >
-                    Add to Cart
+                  <button class="card-icon-btn ml-auto">
+                    <i class="far fa-heart m-auto"></i>
                   </button>
                 </div>
-              </li>
-            </ul>
-          </section>
 
-          <section class="p-3">
-            <h1 class="fs-3 my-2">Kid's Clothing</h1>
+                <img
+                  class="card-vertical-img"
+                  src="assets/jpegs/iron-man-bobblehead.jpg"
+                  alt="iron man bobblehead jpg"
+                />
 
-            <ul class="flex flex-wrap gap-2p5 my-3">
-              <li>
-                <div
-                  class="card overflow-hidden card-vertical shadow-light w-25"
+                <h2 class="card-head fs-2 h-3p5">Iron Man Bobblehead</h2>
+                <p class="card-text h-7">
+                  Action Figure Marvel Bobble Head for Car Dashboard or Office
+                  Desk
+                </p>
+
+                <div class="card-vertical-footer mt-1">
+                  <span class="current-price">
+                    <strong>₹379</strong>
+                  </span>
+                  <span class="earlier-price">₹899</span>
+                  <span class="pct-off"><strong>58% off</strong></span>
+                </div>
+
+                <button
+                  class="bg-add-cart-dark bg-add-cart-hover btn m-0 fw-bold text-slate-800"
                 >
-                  <div class="card-vertical-header">
-                    <span class="status-badge text-center w-6p5"
-                      >4+ <i class="fas fa-star"></i
-                    ></span>
+                  Go to Cart
+                </button>
+              </div>
+            </li>
 
-                    <button class="card-icon-btn ml-auto">
-                      <i class="far fa-heart m-auto"></i>
-                    </button>
-                  </div>
+            <li>
+              <div class="card overflow-hidden card-vertical shadow-light w-25">
+                <div class="card-vertical-header">
+                  <span class="status-badge text-center w-6p5"
+                    >3+ <i class="fas fa-star"></i
+                  ></span>
 
-                  <img
-                    class="card-vertical-img"
-                    src="assets/jpegs/boy-tshirt-pack.jpg"
-                    alt="marvel t-shirt for boys jpg"
-                  />
-
-                  <h2 class="card-head fs-2 h-3p5">
-                    Marvel By Kidsville Boys' T-Shirt
-                  </h2>
-                  <p class="card-text h-7">Pack of 3</p>
-
-                  <div class="card-vertical-footer mt-1">
-                    <span class="current-price">
-                      <strong>₹679</strong>
-                    </span>
-                    <span class="earlier-price">₹1799</span>
-                    <span class="pct-off"><strong>62% off</strong></span>
-                  </div>
-
-                  <button
-                    class="bg-add-cart bg-add-cart-hover btn fw-bold m-0 text-slate-800"
-                  >
-                    Add to Cart
+                  <button class="bg-red-50 card-icon-btn ml-auto">
+                    <i class="fas fa-heart m-auto"></i>
                   </button>
                 </div>
-              </li>
-            </ul>
-          </section>
-        </main>
-      </div>
+
+                <img
+                  class="card-vertical-img"
+                  src="assets/jpegs/hulk-bobblehead.jpg"
+                  alt="hulk bobblehead jpg"
+                />
+
+                <h2 class="card-head fs-2 h-3p5">Hulk Bobblehead</h2>
+                <p class="card-text h-7">
+                  Elegant Lifestyle Super Hero Incredible Hulk Action Figure
+                  Limited Edition, Marvel Comics Character
+                </p>
+
+                <div class="card-vertical-footer mt-1">
+                  <span class="current-price">
+                    <strong>₹416</strong>
+                  </span>
+                  <span class="earlier-price">₹1,780</span>
+                  <span class="pct-off"><strong>76% off</strong></span>
+                </div>
+
+                <button
+                  class="bg-add-cart bg-add-cart-hover btn m-0 fw-bold text-slate-800"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </li>
+
+            <li>
+              <div class="card overflow-hidden card-vertical shadow-light w-25">
+                <div class="card-vertical-header">
+                  <span class="status-badge text-center w-6p5"
+                    >3 <i class="fas fa-star"></i
+                  ></span>
+
+                  <button class="card-icon-btn ml-auto">
+                    <i class="far fa-heart m-auto"></i>
+                  </button>
+                </div>
+
+                <img
+                  class="card-vertical-img"
+                  src="assets/jpegs/iron-man-bobblehead.jpg"
+                  alt="iron man bobblehead jpg"
+                />
+
+                <h2 class="card-head fs-2 h-3p5">Iron Man Bobblehead</h2>
+                <p class="card-text h-7">
+                  Action Figure Marvel Bobble Head for Car Dashboard or Office
+                  Desk
+                </p>
+
+                <div class="card-vertical-footer mt-1">
+                  <span class="current-price">
+                    <strong>₹379</strong>
+                  </span>
+                  <span class="earlier-price">₹899</span>
+                  <span class="pct-off"><strong>58% off</strong></span>
+                </div>
+
+                <button
+                  class="bg-add-cart-dark bg-add-cart-hover btn m-0 fw-bold text-slate-800"
+                >
+                  Go to Cart
+                </button>
+              </div>
+            </li>
+
+            <li>
+              <div class="card overflow-hidden card-vertical shadow-light w-25">
+                <div class="card-vertical-header">
+                  <span class="status-badge text-center w-6p5"
+                    >3+ <i class="fas fa-star"></i
+                  ></span>
+
+                  <button class="bg-red-50 card-icon-btn ml-auto">
+                    <i class="fas fa-heart m-auto"></i>
+                  </button>
+                </div>
+
+                <img
+                  class="card-vertical-img"
+                  src="assets/jpegs/hulk-bobblehead.jpg"
+                  alt="hulk bobblehead jpg"
+                />
+
+                <h2 class="card-head fs-2 h-3p5">Hulk Bobblehead</h2>
+                <p class="card-text h-7">
+                  Elegant Lifestyle Super Hero Incredible Hulk Action Figure
+                  Limited Edition, Marvel Comics Character
+                </p>
+
+                <div class="card-vertical-footer mt-1">
+                  <span class="current-price">
+                    <strong>₹416</strong>
+                  </span>
+                  <span class="earlier-price">₹1,780</span>
+                  <span class="pct-off"><strong>76% off</strong></span>
+                </div>
+
+                <button
+                  class="bg-add-cart bg-add-cart-hover btn m-0 fw-bold text-slate-800"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <section class="p-3">
+          <h1 class="fs-3 my-2">Men's Clothing</h1>
+
+          <ul class="flex flex-wrap gap-2p5 my-3">
+            <li>
+              <div class="card overflow-hidden card-vertical shadow-light w-25">
+                <div class="card-vertical-header">
+                  <span class="status-badge text-center w-6p5"
+                    >4+ <i class="fas fa-star"></i
+                  ></span>
+
+                  <button class="card-icon-btn ml-auto">
+                    <i class="far fa-heart m-auto"></i>
+                  </button>
+                </div>
+
+                <img
+                  class="card-vertical-img"
+                  src="assets/jpegs/marvel-tshirt.jpg"
+                  alt="marvel t-shirt for man jpg"
+                />
+
+                <h2 class="card-head fs-2 h-3p5">
+                  Marvel Men's Regular Fit T-Shirt
+                </h2>
+                <p class="card-text h-7">
+                  Crew Neck, Half Sleeve regular fit t-shirt for men
+                </p>
+
+                <div class="card-vertical-footer mt-1">
+                  <span class="current-price">
+                    <strong>₹379</strong>
+                  </span>
+                  <span class="earlier-price">₹899</span>
+                  <span class="pct-off"><strong>58% off</strong></span>
+                </div>
+
+                <button
+                  class="bg-add-cart bg-add-cart-hover btn fw-bold m-0 text-slate-800"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </li>
+
+            <li>
+              <div class="card overflow-hidden card-vertical shadow-light w-25">
+                <div class="card-vertical-header">
+                  <span class="status-badge text-center w-6p5"
+                    >4+ <i class="fas fa-star"></i
+                  ></span>
+
+                  <button class="card-icon-btn ml-auto">
+                    <i class="far fa-heart m-auto"></i>
+                  </button>
+                </div>
+
+                <img
+                  class="card-vertical-img"
+                  src="assets/jpegs/marvel-tshirt.jpg"
+                  alt="marvel t-shirt for man jpg"
+                />
+
+                <h2 class="card-head fs-2 h-3p5">
+                  Marvel Men's Regular Fit T-Shirt
+                </h2>
+                <p class="card-text h-7">
+                  Crew Neck, Half Sleeve regular fit t-shirt for men
+                </p>
+
+                <div class="card-vertical-footer mt-1">
+                  <span class="current-price">
+                    <strong>₹379</strong>
+                  </span>
+                  <span class="earlier-price">₹899</span>
+                  <span class="pct-off"><strong>58% off</strong></span>
+                </div>
+
+                <button
+                  class="bg-add-cart bg-add-cart-hover btn fw-bold m-0 text-slate-800"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </li>
+
+            <li>
+              <div class="card overflow-hidden card-vertical shadow-light w-25">
+                <div class="card-vertical-header">
+                  <span class="status-badge text-center w-6p5"
+                    >4+ <i class="fas fa-star"></i
+                  ></span>
+
+                  <button class="card-icon-btn ml-auto">
+                    <i class="far fa-heart m-auto"></i>
+                  </button>
+                </div>
+
+                <img
+                  class="card-vertical-img"
+                  src="assets/jpegs/marvel-tshirt.jpg"
+                  alt="marvel t-shirt for man jpg"
+                />
+
+                <h2 class="card-head fs-2 h-3p5">
+                  Marvel Men's Regular Fit T-Shirt
+                </h2>
+                <p class="card-text h-7">
+                  Crew Neck, Half Sleeve regular fit t-shirt for men
+                </p>
+
+                <div class="card-vertical-footer mt-1">
+                  <span class="current-price">
+                    <strong>₹379</strong>
+                  </span>
+                  <span class="earlier-price">₹899</span>
+                  <span class="pct-off"><strong>58% off</strong></span>
+                </div>
+
+                <button
+                  class="bg-add-cart bg-add-cart-hover btn fw-bold m-0 text-slate-800"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </li>
+
+            <li>
+              <div class="card overflow-hidden card-vertical shadow-light w-25">
+                <div class="card-vertical-header">
+                  <span class="status-badge text-center w-6p5"
+                    >4+ <i class="fas fa-star"></i
+                  ></span>
+
+                  <button class="card-icon-btn ml-auto">
+                    <i class="far fa-heart m-auto"></i>
+                  </button>
+                </div>
+
+                <img
+                  class="card-vertical-img"
+                  src="assets/jpegs/marvel-tshirt.jpg"
+                  alt="marvel t-shirt for man jpg"
+                />
+
+                <h2 class="card-head fs-2 h-3p5">
+                  Marvel Men's Regular Fit T-Shirt
+                </h2>
+                <p class="card-text h-7">
+                  Crew Neck, Half Sleeve regular fit t-shirt for men
+                </p>
+
+                <div class="card-vertical-footer mt-1">
+                  <span class="current-price">
+                    <strong>₹379</strong>
+                  </span>
+                  <span class="earlier-price">₹899</span>
+                  <span class="pct-off"><strong>58% off</strong></span>
+                </div>
+
+                <button
+                  class="bg-add-cart bg-add-cart-hover btn fw-bold m-0 text-slate-800"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <section class="p-3">
+          <h1 class="fs-3 my-2">Kid's Clothing</h1>
+
+          <ul class="flex flex-wrap gap-2p5 my-3">
+            <li>
+              <div class="card overflow-hidden card-vertical shadow-light w-25">
+                <div class="card-vertical-header">
+                  <span class="status-badge text-center w-6p5"
+                    >4+ <i class="fas fa-star"></i
+                  ></span>
+
+                  <button class="card-icon-btn ml-auto">
+                    <i class="far fa-heart m-auto"></i>
+                  </button>
+                </div>
+
+                <img
+                  class="card-vertical-img"
+                  src="assets/jpegs/boy-tshirt-pack.jpg"
+                  alt="marvel t-shirt for boys jpg"
+                />
+
+                <h2 class="card-head fs-2 h-3p5">
+                  Marvel By Kidsville Boys' T-Shirt
+                </h2>
+                <p class="card-text">Pack of 3</p>
+
+                <div class="card-vertical-footer mt-1">
+                  <span class="current-price">
+                    <strong>₹679</strong>
+                  </span>
+                  <span class="earlier-price">₹1799</span>
+                  <span class="pct-off"><strong>62% off</strong></span>
+                </div>
+
+                <button
+                  class="bg-add-cart bg-add-cart-hover btn fw-bold m-0 text-slate-800"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </li>
+
+            <li>
+              <div class="card overflow-hidden card-vertical shadow-light w-25">
+                <div class="card-vertical-header">
+                  <span class="status-badge text-center w-6p5"
+                    >4+ <i class="fas fa-star"></i
+                  ></span>
+
+                  <button class="card-icon-btn ml-auto">
+                    <i class="far fa-heart m-auto"></i>
+                  </button>
+                </div>
+
+                <img
+                  class="card-vertical-img"
+                  src="assets/jpegs/boy-tshirt-pack.jpg"
+                  alt="marvel t-shirt for boys jpg"
+                />
+
+                <h2 class="card-head fs-2 h-3p5">
+                  Marvel By Kidsville Boys' T-Shirt
+                </h2>
+                <p class="card-text">Pack of 3</p>
+
+                <div class="card-vertical-footer mt-1">
+                  <span class="current-price">
+                    <strong>₹679</strong>
+                  </span>
+                  <span class="earlier-price">₹1799</span>
+                  <span class="pct-off"><strong>62% off</strong></span>
+                </div>
+
+                <button
+                  class="bg-add-cart bg-add-cart-hover btn fw-bold m-0 text-slate-800"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </li>
+
+            <li>
+              <div class="card overflow-hidden card-vertical shadow-light w-25">
+                <div class="card-vertical-header">
+                  <span class="status-badge text-center w-6p5"
+                    >4+ <i class="fas fa-star"></i
+                  ></span>
+
+                  <button class="card-icon-btn ml-auto">
+                    <i class="far fa-heart m-auto"></i>
+                  </button>
+                </div>
+
+                <img
+                  class="card-vertical-img"
+                  src="assets/jpegs/boy-tshirt-pack.jpg"
+                  alt="marvel t-shirt for boys jpg"
+                />
+
+                <h2 class="card-head fs-2 h-3p5">
+                  Marvel By Kidsville Boys' T-Shirt
+                </h2>
+                <p class="card-text">Pack of 3</p>
+
+                <div class="card-vertical-footer mt-1">
+                  <span class="current-price">
+                    <strong>₹679</strong>
+                  </span>
+                  <span class="earlier-price">₹1799</span>
+                  <span class="pct-off"><strong>62% off</strong></span>
+                </div>
+
+                <button
+                  class="bg-add-cart bg-add-cart-hover btn fw-bold m-0 text-slate-800"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </li>
+
+            <li>
+              <div class="card overflow-hidden card-vertical shadow-light w-25">
+                <div class="card-vertical-header">
+                  <span class="status-badge text-center w-6p5"
+                    >4+ <i class="fas fa-star"></i
+                  ></span>
+
+                  <button class="card-icon-btn ml-auto">
+                    <i class="far fa-heart m-auto"></i>
+                  </button>
+                </div>
+
+                <img
+                  class="card-vertical-img"
+                  src="assets/jpegs/boy-tshirt-pack.jpg"
+                  alt="marvel t-shirt for boys jpg"
+                />
+
+                <h2 class="card-head fs-2 h-3p5">
+                  Marvel By Kidsville Boys' T-Shirt
+                </h2>
+                <p class="card-text">Pack of 3</p>
+
+                <div class="card-vertical-footer mt-1">
+                  <span class="current-price">
+                    <strong>₹679</strong>
+                  </span>
+                  <span class="earlier-price">₹1799</span>
+                  <span class="pct-off"><strong>62% off</strong></span>
+                </div>
+
+                <button
+                  class="bg-add-cart bg-add-cart-hover btn fw-bold m-0 text-slate-800"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </li>
+
+            <li>
+              <div class="card overflow-hidden card-vertical shadow-light w-25">
+                <div class="card-vertical-header">
+                  <span class="status-badge text-center w-6p5"
+                    >4+ <i class="fas fa-star"></i
+                  ></span>
+
+                  <button class="card-icon-btn ml-auto">
+                    <i class="far fa-heart m-auto"></i>
+                  </button>
+                </div>
+
+                <img
+                  class="card-vertical-img"
+                  src="assets/jpegs/boy-tshirt-pack.jpg"
+                  alt="marvel t-shirt for boys jpg"
+                />
+
+                <h2 class="card-head fs-2 h-3p5">
+                  Marvel By Kidsville Boys' T-Shirt
+                </h2>
+                <p class="card-text">Pack of 3</p>
+
+                <div class="card-vertical-footer mt-1">
+                  <span class="current-price">
+                    <strong>₹679</strong>
+                  </span>
+                  <span class="earlier-price">₹1799</span>
+                  <span class="pct-off"><strong>62% off</strong></span>
+                </div>
+
+                <button
+                  class="bg-add-cart bg-add-cart-hover btn fw-bold m-0 text-slate-800"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </main>
     </div>
 
     <footer class="bg-red-50">

@@ -8,6 +8,13 @@ html {
   scroll-behavior: smooth;
 }
 
+/** Aside **/
+
+aside {
+  height: 100vh;
+  overflow-y: auto;
+}
+
 /** Container **/
 
 .container {
@@ -25,6 +32,7 @@ html {
 
 header {
   box-shadow: 0 0.1rem 0.4rem var(--COLOR-SLATE-500);
+  position: relative;
 }
 
 .img-brand-logo {
@@ -67,10 +75,6 @@ header {
 }
 
 /** Utilities **/
-
-.basis-28 {
-  flex-basis: 28rem;
-}
 
 .bg-add-cart-dark {
   background: var(--COLOR-ADD-CART-Dark);
@@ -128,10 +132,6 @@ header {
 
 .fw-normal {
   font-weight: normal;
-}
-
-.grow-1 {
-  flex-grow: 1;
 }
 
 .shadow-light {
