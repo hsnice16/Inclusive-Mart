@@ -65,7 +65,7 @@
         </form>
 
         <div class="align-i-ctr flex justify-c-sb">
-          <button class="btn bg-white bg-white-hover translate-y">
+          <button class="btn bg-white bg-white-hover border-r-0p2 translate-y">
             Log In
           </button>
 
@@ -84,7 +84,9 @@
 
     <main class="container text-slate-600">
       <section class="flex p-3 section-container">
-        <div class="card flex-direction-col m-auto shadow-light w-33">
+        <div
+          class="card flex-direction-col m-auto shadow-light w-33 overflow-hidden"
+        >
           <img
             class="card-vertical-img h-12"
             src="assets/jpegs/dr-strange.jpg"
@@ -96,7 +98,7 @@
 
             <label class="fw-bold" for="email-id">Email Address</label>
             <input
-              class="bg-unset border-r-unset input mx-0 w-100pct"
+              class="bg-unset border-r-0p2 input mx-0 w-100pct"
               type="email"
               name="email-id"
               id="email-id"
@@ -105,7 +107,7 @@
 
             <label class="fw-bold" for="password">Password</label>
             <input
-              class="bg-unset border-r-unset input mx-0 w-100pct"
+              class="bg-unset border-r-0p2 input mx-0 w-100pct"
               type="password"
               name="password"
               id="password"
@@ -130,9 +132,7 @@
               >
             </div>
 
-            <button
-              class="border-r-unset btn btn-error-solid btn-squared mx-0 w-100pct"
-            >
+            <button class="btn btn-error-solid border-r-0p2 mx-0 w-100pct">
               <i class="fas fa-door-open"></i> Log In
             </button>
 
@@ -149,26 +149,26 @@
     <footer class="bg-red-50">
       <div class="container flex flex-wrap justify-c-sa py-1p5 px-2">
         <div>
-          <h3 class="my-1 text-slate-800">Quick Links</h3>
+          <div class="fs-1p7 fw-bold my-1 text-slate-800">Quick Links</div>
 
           <ul class="mx-1">
             <li>
               <a class="link" href="#">Home</a>
             </li>
             <li class="my-1">
-              <a class="link" href="#">Products</a>
+              <a class="link" href="products.html">Products</a>
             </li>
             <li>
               <a class="link" href="cart.html">My Cart</a>
             </li>
             <li class="my-1">
-              <a class="link" href="wishlist.html">My Wishlist</a>
+              <a class="link" href="wishlist.html">My Wish List</a>
             </li>
           </ul>
         </div>
 
         <div>
-          <h3 class="my-1 text-slate-800">Connect with me</h3>
+          <div class="fs-1p7 fw-bold my-1 text-slate-800">Connect with me</div>
 
           <ul class="flex">
             <li class="mx-1 translate-y">
