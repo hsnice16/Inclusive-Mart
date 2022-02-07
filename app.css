@@ -22,12 +22,6 @@ aside {
   max-width: 140rem;
 }
 
-.section-container {
-  margin: auto;
-  max-width: 120rem;
-  min-height: 85vh;
-}
-
 /** Header **/
 
 header {
@@ -134,12 +128,32 @@ header {
   font-weight: normal;
 }
 
+.h-28 {
+  height: 28rem;
+}
+
+.min-h-85 {
+  min-height: 85vh;
+}
+
+.min-h-15 {
+  min-height: 15vh;
+}
+
 .shadow-light {
   box-shadow: 0px 8px 24px var(--COLOR-SHADOW-LIGHT);
 }
 
+.shadow-slate-hover:hover {
+  box-shadow: 0.1rem 0.1rem 0.2rem var(--COLOR-SLATE-400);
+}
+
 .shadow-unset {
   box-shadow: unset;
+}
+
+.shrink-0 {
+  flex-shrink: 0;
 }
 
 .w-4 {
@@ -148,6 +162,10 @@ header {
 
 .max-w-20 {
   max-width: 20rem;
+}
+
+.w-24 {
+  width: 24rem;
 }
 
 .w-45 {

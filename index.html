@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Inclusive Mart | Log In to access Your Cart and Wishlist</title>
+    <title>
+      Inclusive Mart | Online Shopping site for Marvel fans, Get Your Best Deal
+    </title>
 
     <!-- Favicon -->
     <link
@@ -65,16 +67,25 @@
         </form>
 
         <div class="align-i-ctr flex justify-c-sb">
-          <button class="btn bg-white bg-white-hover border-r-0p2 translate-y">
+          <button
+            id="btn-login"
+            class="btn bg-white bg-white-hover border-r-0p2 translate-y"
+          >
             Log In
           </button>
 
-          <a href="wishlist.html" class="badge-btn mx-2 text-white translate-y">
+          <a
+            href="pages/wishlist.html"
+            class="badge-btn mx-2 text-white translate-y"
+          >
             <i class="fas fa-heart"></i>
             <span class="badge-count bg-red-500">0</span>
           </a>
 
-          <a href="cart.html" class="badge-btn mr-1 text-white translate-y">
+          <a
+            href="pages/cart.html"
+            class="badge-btn mr-1 text-white translate-y"
+          >
             <i class="fas fa-shopping-cart"></i>
             <span class="badge-count bg-red-500">0</span>
           </a>
@@ -82,87 +93,285 @@
       </div>
     </header>
 
-    <main class="container text-slate-600">
-      <section class="flex p-3 section-container">
-        <div
-          class="card flex-direction-col m-auto shadow-light w-33 overflow-hidden"
-        >
-          <img
-            class="card-vertical-img h-12"
-            src="assets/jpegs/dr-strange.jpg"
-            alt="unsplash dr. strange jpg"
-          />
+    <main class="container min-h-85 p-3 text-slate-600">
+      <div class="bg-red-50 img-square mx-1 h-28 overflow-hidden">
+        <img
+          class="img-responsive shadow-unset h-100pct"
+          src="assets/jpegs/hero-img.png"
+          alt="hero img png"
+        />
+      </div>
 
-          <form class="border-r-unset form p-2 max-w-100pct shadow-unset">
-            <h1 class="mb-2 text-slate-600">Log In</h1>
+      <section class="py-2">
+        <h1 class="fs-3 my-2 mx-1">Shop in Category You Like</h1>
 
-            <label class="fw-bold" for="email-id">Email Address</label>
-            <input
-              class="bg-unset border-r-0p2 input mx-0 w-100pct"
-              type="email"
-              name="email-id"
-              id="email-id"
-              placeholder="inclusive.mart@example.com"
-            />
-
-            <label class="fw-bold" for="password">Password</label>
-            <input
-              class="bg-unset border-r-0p2 input mx-0 w-100pct"
-              type="password"
-              name="password"
-              id="password"
-              placeholder="********"
-            />
-
-            <div class="align-i-ctr flex justify-c-sb mb-1 mt-2">
-              <label class="cursor-ptr fs-1p5" for="remember-me">
-                <input
-                  class="cursor-ptr"
-                  type="checkbox"
-                  name="remember-me"
-                  id="remember-me"
-                />
-                Remember me
-              </label>
-
-              <a
-                class="fs-1p5 fw-bold text-slate-600 text-slate-800-hover"
-                href="#"
-                >Forgot Password?</a
-              >
-            </div>
-
-            <button class="btn btn-error-solid border-r-0p2 mx-0 w-100pct">
-              <i class="fas fa-door-open"></i> Log In
-            </button>
-
-            <a
-              class="inline-block fw-bold mt-1 text-center text-slate-600 text-slate-800-hover w-100pct"
-              href="signup.html"
-              >New on Inclusive Mart? Sign Up</a
+        <ul class="align-i-ctr flex flex-wrap justify-c-sa">
+          <li class="my-1">
+            <div
+              class="card card-vertical cursor-ptr w-33 shadow-light shadow-slate-hover"
             >
-          </form>
-        </div>
+              <img
+                class="img img-round m-auto my-2"
+                src="assets/jpegs/iron-man-bobblehead.jpg"
+                alt="iron man bobblehead jpg"
+              />
+
+              <h2 class="m-auto mb-2">Bobblehead's</h2>
+            </div>
+          </li>
+
+          <li class="my-1">
+            <div
+              class="card card-vertical cursor-ptr w-33 shadow-light shadow-slate-hover"
+            >
+              <img
+                class="img img-round m-auto my-2"
+                src="assets/jpegs/marvel-tshirt.jpg"
+                alt="marvel t-shirt for man jpg"
+              />
+
+              <h2 class="m-auto mb-2">Men's Clothing</h2>
+            </div>
+          </li>
+
+          <li class="my-1">
+            <div
+              class="card card-vertical cursor-ptr w-33 shadow-light shadow-slate-hover"
+            >
+              <img
+                class="img img-round m-auto my-2"
+                src="assets/jpegs/boy-tshirt-pack.jpg"
+                alt="marvel t-shirt for boys jpg"
+              />
+
+              <h2 class="m-auto mb-2">Kid's Clothing</h2>
+            </div>
+          </li>
+
+          <li class="my-1">
+            <div
+              class="card card-vertical cursor-ptr w-33 shadow-light shadow-slate-hover"
+            >
+              <img
+                class="img img-round m-auto my-2"
+                src="assets/jpegs/hulk-bobblehead.jpg"
+                alt="hulk bobblehead jpg"
+              />
+
+              <h2 class="m-auto mb-2">Bobblehead's</h2>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="py-2">
+        <h1 class="fs-3 my-2 mx-1">Shop now, Only for you</h1>
+
+        <ul class="align-i-ctr flex flex-wrap justify-c-sa">
+          <li class="my-1">
+            <div class="card overflow-hidden card-vertical shadow-light w-24">
+              <div class="card-vertical-header">
+                <span class="status-badge text-center w-6p5"
+                  >3+ <i class="fas fa-star"></i
+                ></span>
+
+                <button class="card-icon-btn ml-auto">
+                  <i class="far fa-heart m-auto"></i>
+                </button>
+              </div>
+
+              <img
+                class="card-vertical-img"
+                src="assets/jpegs/hulk-bobblehead.jpg"
+                alt="hulk bobblehead jpg"
+              />
+
+              <h2 class="card-head fs-2 h-3p5">Hulk Bobblehead</h2>
+
+              <div class="card-vertical-footer mt-1">
+                <span class="current-price">
+                  <strong>₹416</strong>
+                </span>
+                <span class="earlier-price">₹1,780</span>
+                <span class="pct-off"><strong>76% off</strong></span>
+              </div>
+
+              <button
+                class="bg-add-cart bg-add-cart-hover btn fw-bold m-0 text-slate-800"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </li>
+
+          <li class="my-1">
+            <div class="card overflow-hidden card-vertical shadow-light w-24">
+              <div class="card-vertical-header">
+                <span class="status-badge text-center w-6p5"
+                  >4+ <i class="fas fa-star"></i
+                ></span>
+
+                <button class="card-icon-btn ml-auto">
+                  <i class="far fa-heart m-auto"></i>
+                </button>
+              </div>
+
+              <img
+                class="card-vertical-img"
+                src="assets/jpegs/marvel-tshirt.jpg"
+                alt="marvel t-shirt for man jpg"
+              />
+
+              <h2 class="card-head fs-2 h-3p5">
+                Marvel Men's Regular Fit T-Shirt
+              </h2>
+
+              <div class="card-vertical-footer mt-1">
+                <span class="current-price">
+                  <strong>₹379</strong>
+                </span>
+                <span class="earlier-price">₹899</span>
+                <span class="pct-off"><strong>58% off</strong></span>
+              </div>
+
+              <button
+                class="bg-add-cart bg-add-cart-hover btn fw-bold m-0 text-slate-800"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </li>
+
+          <li class="my-1">
+            <div class="card overflow-hidden card-vertical shadow-light w-24">
+              <div class="card-vertical-header">
+                <span class="status-badge text-center w-6p5"
+                  >3 <i class="fas fa-star"></i
+                ></span>
+
+                <button class="card-icon-btn ml-auto">
+                  <i class="far fa-heart m-auto"></i>
+                </button>
+              </div>
+
+              <img
+                class="card-vertical-img"
+                src="assets/jpegs/iron-man-bobblehead.jpg"
+                alt="iron man bobblehead jpg"
+              />
+
+              <h2 class="card-head fs-2 h-3p5">Iron Man Bobblehead</h2>
+
+              <div class="card-vertical-footer mt-1">
+                <span class="current-price">
+                  <strong>₹379</strong>
+                </span>
+                <span class="earlier-price">₹899</span>
+                <span class="pct-off"><strong>58% off</strong></span>
+              </div>
+
+              <button
+                class="bg-add-cart bg-add-cart-hover btn fw-bold m-0 text-slate-800"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </li>
+
+          <li class="my-1">
+            <div class="card overflow-hidden card-vertical shadow-light w-24">
+              <div class="card-vertical-header">
+                <span class="status-badge text-center w-6p5"
+                  >4+ <i class="fas fa-star"></i
+                ></span>
+
+                <button class="card-icon-btn ml-auto">
+                  <i class="far fa-heart m-auto"></i>
+                </button>
+              </div>
+
+              <img
+                class="card-vertical-img"
+                src="assets/jpegs/boy-tshirt-pack.jpg"
+                alt="marvel t-shirt for boys jpg"
+              />
+
+              <h2 class="card-head fs-2 h-3p5">
+                Marvel By Kidsville Boys' T-Shirt
+              </h2>
+
+              <div class="card-vertical-footer mt-1">
+                <span class="current-price">
+                  <strong>₹679</strong>
+                </span>
+                <span class="earlier-price">₹1799</span>
+                <span class="pct-off"><strong>62% off</strong></span>
+              </div>
+
+              <button
+                class="bg-add-cart bg-add-cart-hover btn fw-bold m-0 text-slate-800"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </li>
+
+          <li class="my-1">
+            <div class="card overflow-hidden card-vertical shadow-light w-24">
+              <div class="card-vertical-header">
+                <span class="status-badge text-center w-6p5"
+                  >3+ <i class="fas fa-star"></i
+                ></span>
+
+                <button class="card-icon-btn ml-auto">
+                  <i class="far fa-heart m-auto"></i>
+                </button>
+              </div>
+
+              <img
+                class="card-vertical-img"
+                src="assets/jpegs/hulk-bobblehead.jpg"
+                alt="hulk bobblehead jpg"
+              />
+
+              <h2 class="card-head fs-2 h-3p5">Hulk Bobblehead</h2>
+
+              <div class="card-vertical-footer mt-1">
+                <span class="current-price">
+                  <strong>₹416</strong>
+                </span>
+                <span class="earlier-price">₹1,780</span>
+                <span class="pct-off"><strong>76% off</strong></span>
+              </div>
+
+              <button
+                class="bg-add-cart bg-add-cart-hover btn fw-bold m-0 text-slate-800"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </li>
+        </ul>
       </section>
     </main>
 
-    <footer class="bg-red-50">
+    <footer class="bg-red-50 min-h-15">
       <div class="container flex flex-wrap justify-c-sa py-1p5 px-2">
         <div>
           <div class="fs-1p7 fw-bold my-1 text-slate-800">Quick Links</div>
 
           <ul class="mx-1">
             <li>
-              <a class="link" href="#">Home</a>
+              <a class="link" href="index.html">Home</a>
             </li>
             <li class="my-1">
-              <a class="link" href="products.html">Products</a>
+              <a class="link" href="pages/products.html">Products</a>
             </li>
             <li>
-              <a class="link" href="cart.html">My Cart</a>
+              <a class="link" href="pages/cart.html">My Cart</a>
             </li>
             <li class="my-1">
-              <a class="link" href="wishlist.html">My Wish List</a>
+              <a class="link" href="pages/wishlist.html">My Wish List</a>
             </li>
           </ul>
         </div>
@@ -207,5 +416,11 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      document.querySelector("#btn-login").addEventListener("click", () => {
+        window.open("pages/signin.html", "_self");
+      });
+    </script>
   </body>
 </html>

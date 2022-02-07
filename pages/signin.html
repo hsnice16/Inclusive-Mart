@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inclusive Mart | Log In to access Your Cart and Wishlist</title>
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/brand-logos/logo-bg-white.png"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Posh UI Library -->
+    <link
+      rel="stylesheet"
+      href="https://poshui-components.netlify.app/css/main.css"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../app.css" />
+  </head>
+  <body class="bg-slate-50 fs-1p6">
+    <header class="bg-stone">
+      <div class="align-i-ctr container flex justify-c-sb py-1 px-2">
+        <div class="align-i-ctr flex justify-c-sb">
+          <img
+            class="img-brand-logo"
+            src="../assets/brand-logos/logo-bg-stone.png"
+            alt="flaticon cart logo"
+          />
+
+          <a class="flex flex-direction-col ml-1" href="../index.html">
+            <span class="fs-1p7 text-white">Inclusive</span>
+            <span class="mart-text text-red-500">Mart</span>
+          </a>
+        </div>
+
+        <form
+          class="align-i-ctr bg-white border-r-10 flex fs-1p5 h-3p5 justify-c-sb overflow-hidden px-1"
+        >
+          <input
+            class="border-none fs-1p6 outline-none p-0p5 text-slate-800 w-25"
+            type="text"
+            placeholder="search for product"
+          />
+          <button
+            class="bg-red-500-hover btn btn-error-solid h-100pct mr-n1 py-0p5 px-1p5"
+            type="submit"
+          >
+            <i class="fas fa-search"></i>
+          </button>
+        </form>
+
+        <div class="align-i-ctr flex justify-c-sb">
+          <button
+            id="btn-login"
+            class="btn bg-white bg-white-hover border-r-0p2 translate-y"
+          >
+            Log In
+          </button>
+
+          <a href="wishlist.html" class="badge-btn mx-2 text-white translate-y">
+            <i class="fas fa-heart"></i>
+            <span class="badge-count bg-red-500">0</span>
+          </a>
+
+          <a href="cart.html" class="badge-btn mr-1 text-white translate-y">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="badge-count bg-red-500">0</span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main class="container flex min-h-85 p-3 text-slate-600">
+      <div
+        class="card flex-direction-col m-auto shadow-light w-33 overflow-hidden"
+      >
+        <img
+          class="card-vertical-img h-12"
+          src="../assets/jpegs/dr-strange.jpg"
+          alt="unsplash dr. strange jpg"
+        />
+
+        <form class="border-r-unset form p-2 max-w-100pct shadow-unset">
+          <h1 class="mb-2 text-slate-600">Log In</h1>
+
+          <label class="fw-bold" for="email-id">Email Address</label>
+          <input
+            class="bg-unset border-r-0p2 input mx-0 w-100pct"
+            type="email"
+            name="email-id"
+            id="email-id"
+            placeholder="inclusive.mart@example.com"
+          />
+
+          <label class="fw-bold" for="password">Password</label>
+          <input
+            class="bg-unset border-r-0p2 input mx-0 w-100pct"
+            type="password"
+            name="password"
+            id="password"
+            placeholder="********"
+          />
+
+          <div class="align-i-ctr flex justify-c-sb mb-1 mt-2">
+            <label class="cursor-ptr fs-1p5" for="remember-me">
+              <input
+                class="cursor-ptr"
+                type="checkbox"
+                name="remember-me"
+                id="remember-me"
+              />
+              Remember me
+            </label>
+
+            <a
+              class="fs-1p5 fw-bold text-slate-600 text-slate-800-hover"
+              href="#"
+              >Forgot Password?</a
+            >
+          </div>
+
+          <button class="btn btn-error-solid border-r-0p2 mx-0 w-100pct">
+            <i class="fas fa-door-open"></i> Log In
+          </button>
+
+          <a
+            class="inline-block fw-bold mt-1 text-center text-slate-600 text-slate-800-hover w-100pct"
+            href="signup.html"
+            >New on Inclusive Mart? Sign Up</a
+          >
+        </form>
+      </div>
+    </main>
+
+    <footer class="bg-red-50 min-h-15">
+      <div class="container flex flex-wrap justify-c-sa py-1p5 px-2">
+        <div>
+          <div class="fs-1p7 fw-bold my-1 text-slate-800">Quick Links</div>
+
+          <ul class="mx-1">
+            <li>
+              <a class="link" href="../index.html">Home</a>
+            </li>
+            <li class="my-1">
+              <a class="link" href="products.html">Products</a>
+            </li>
+            <li>
+              <a class="link" href="cart.html">My Cart</a>
+            </li>
+            <li class="my-1">
+              <a class="link" href="wishlist.html">My Wish List</a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="fs-1p7 fw-bold my-1 text-slate-800">Connect with me</div>
+
+          <ul class="flex">
+            <li class="mx-1 translate-y">
+              <a
+                href="https://twitter.com/hsnice16"
+                class="fs-2 link"
+                target="_blank"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </li>
+            <li class="mx-1 translate-y">
+              <a
+                href="https://github.com/hsnice16/"
+                class="fs-2 link"
+                target="_blank"
+                ><i class="fab fa-github"></i
+              ></a>
+            </li>
+            <li class="mx-1 translate-y">
+              <a
+                href="https://www.linkedin.com/in/hsnice16/"
+                target="_blank"
+                class="fs-2 link"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </li>
+            <li class="mx-1 translate-y">
+              <a
+                href="https://www.instagram.com/hsnice16/"
+                target="_blank"
+                class="fs-2 link"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.querySelector("#btn-login").addEventListener("click", () => {
+        window.open("signin.html", "_self");
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inclusive Mart | My Wish Lists</title>
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/brand-logos/logo-bg-white.png"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Posh UI Library -->
+    <link
+      rel="stylesheet"
+      href="https://poshui-components.netlify.app/css/main.css"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../app.css" />
+  </head>
+  <body class="bg-slate-50 fs-1p6">
+    <header class="bg-stone">
+      <div class="align-i-ctr container flex justify-c-sb py-1 px-2">
+        <div class="align-i-ctr flex justify-c-sb">
+          <img
+            class="img-brand-logo"
+            src="../assets/brand-logos/logo-bg-stone.png"
+            alt="flaticon cart logo"
+          />
+
+          <a class="flex flex-direction-col ml-1" href="../index.html">
+            <span class="fs-1p7 text-white">Inclusive</span>
+            <span class="mart-text text-red-500">Mart</span>
+          </a>
+        </div>
+
+        <form
+          class="align-i-ctr bg-white border-r-10 flex fs-1p5 h-3p5 justify-c-sb overflow-hidden px-1"
+        >
+          <input
+            class="border-none fs-1p6 outline-none p-0p5 text-slate-800 w-25"
+            type="text"
+            placeholder="search for product"
+          />
+          <button
+            class="bg-red-500-hover btn btn-error-solid h-100pct mr-n1 py-0p5 px-1p5"
+            type="submit"
+          >
+            <i class="fas fa-search"></i>
+          </button>
+        </form>
+
+        <div class="align-i-ctr flex justify-c-sb">
+          <button class="btn bg-white bg-white-hover border-r-0p2 translate-y">
+            Log Out
+          </button>
+
+          <a href="wishlist.html" class="badge-btn mx-2 text-white translate-y">
+            <i class="fas fa-heart"></i>
+            <span class="badge-count bg-red-500">6</span>
+          </a>
+
+          <a href="cart.html" class="badge-btn mr-1 text-white translate-y">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="badge-count bg-red-500">0</span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main class="container min-h-85 p-3 text-slate-600">
+      <h1 class="fs-3 my-2 text-center">My Wish Lists</h1>
+
+      <p class="fs-2 my-2 text-center">
+        your wishlist is empty till now, <a class="link" href="#">Shop Now</a>
+      </p>
+
+      <ul class="flex flex-wrap gap-2p5 justify-c-sa my-3 p-2">
+        <li>
+          <div class="card overflow-hidden card-vertical shadow-light w-25">
+            <div class="card-vertical-header">
+              <span class="status-badge text-center w-6p5"
+                >3+ <i class="fas fa-star"></i
+              ></span>
+
+              <button class="bg-red-50 card-icon-btn ml-auto">
+                <i class="fas fa-heart m-auto"></i>
+              </button>
+            </div>
+
+            <img
+              class="card-vertical-img"
+              src="../assets/jpegs/hulk-bobblehead.jpg"
+              alt="hulk bobblehead jpg"
+            />
+
+            <h2 class="card-head fs-2 h-3p5">Hulk Bobblehead</h2>
+            <p class="card-text h-7">
+              Elegant Lifestyle Super Hero Incredible Hulk Action Figure Limited
+              Edition, Marvel Comics Character
+            </p>
+
+            <div class="card-vertical-footer mt-1">
+              <span class="current-price">
+                <strong>₹416</strong>
+              </span>
+              <span class="earlier-price">₹1,780</span>
+              <span class="pct-off"><strong>76% off</strong></span>
+            </div>
+
+            <button
+              class="bg-add-cart bg-add-cart-hover btn fw-bold m-0 text-slate-800"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </li>
+
+        <li>
+          <div class="card overflow-hidden card-vertical shadow-light w-25">
+            <div class="card-vertical-header">
+              <span class="status-badge text-center w-6p5"
+                >3 <i class="fas fa-star"></i
+              ></span>
+
+              <button class="bg-red-50 card-icon-btn ml-auto">
+                <i class="fas fa-heart m-auto"></i>
+              </button>
+            </div>
+
+            <img
+              class="card-vertical-img"
+              src="../assets/jpegs/iron-man-bobblehead.jpg"
+              alt="iron man bobblehead jpg"
+            />
+
+            <h2 class="card-head fs-2 h-3p5">Iron Man Bobblehead</h2>
+            <p class="card-text h-7">
+              Action Figure Marvel Bobble Head for Car Dashboard or Office Desk
+            </p>
+
+            <div class="card-vertical-footer mt-1">
+              <span class="current-price">
+                <strong>₹379</strong>
+              </span>
+              <span class="earlier-price">₹899</span>
+              <span class="pct-off"><strong>58% off</strong></span>
+            </div>
+
+            <button
+              class="bg-add-cart bg-add-cart-hover btn fw-bold m-0 text-slate-800"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </li>
+
+        <li>
+          <div class="card overflow-hidden card-vertical shadow-light w-25">
+            <div class="card-vertical-header">
+              <span class="status-badge text-center w-6p5"
+                >4+ <i class="fas fa-star"></i
+              ></span>
+
+              <button class="bg-red-50 card-icon-btn ml-auto">
+                <i class="fas fa-heart m-auto"></i>
+              </button>
+            </div>
+
+            <img
+              class="card-vertical-img"
+              src="../assets/jpegs/marvel-tshirt.jpg"
+              alt="marvel t-shirt for man jpg"
+            />
+
+            <h2 class="card-head fs-2 h-3p5">
+              Marvel Men's Regular Fit T-Shirt
+            </h2>
+            <p class="card-text h-7">
+              Crew Neck, Half Sleeve regular fit t-shirt for men
+            </p>
+
+            <div class="card-vertical-footer mt-1">
+              <span class="current-price">
+                <strong>₹379</strong>
+              </span>
+              <span class="earlier-price">₹899</span>
+              <span class="pct-off"><strong>58% off</strong></span>
+            </div>
+
+            <button
+              class="bg-add-cart bg-add-cart-hover btn fw-bold m-0 text-slate-800"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </li>
+
+        <li>
+          <div class="card overflow-hidden card-vertical shadow-light w-25">
+            <div class="card-vertical-header">
+              <span class="status-badge text-center w-6p5"
+                >4+ <i class="fas fa-star"></i
+              ></span>
+
+              <button class="bg-red-50 card-icon-btn ml-auto">
+                <i class="fas fa-heart m-auto"></i>
+              </button>
+            </div>
+
+            <img
+              class="card-vertical-img"
+              src="../assets/jpegs/boy-tshirt-pack.jpg"
+              alt="marvel t-shirt for boys jpg"
+            />
+
+            <h2 class="card-head fs-2 h-3p5">
+              Marvel By Kidsville Boys' T-Shirt
+            </h2>
+            <p class="card-text h-7">Pack of 3</p>
+
+            <div class="card-vertical-footer mt-1">
+              <span class="current-price">
+                <strong>₹679</strong>
+              </span>
+              <span class="earlier-price">₹1799</span>
+              <span class="pct-off"><strong>62% off</strong></span>
+            </div>
+
+            <button
+              class="bg-add-cart bg-add-cart-hover btn fw-bold m-0 text-slate-800"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </li>
+
+        <li>
+          <div class="card card-vertical shadow-light w-25">
+            <div class="card-vertical-header">
+              <span class="status-badge text-center w-6p5"
+                >4+ <i class="fas fa-star"></i
+              ></span>
+
+              <button class="bg-red-50 card-icon-btn ml-auto">
+                <i class="fas fa-heart m-auto"></i>
+              </button>
+            </div>
+
+            <img
+              class="card-vertical-img"
+              src="../assets/jpegs/marvel-tshirt.jpg"
+              alt="marvel t-shirt for man jpg"
+            />
+
+            <h2 class="card-head fs-2 h-3p5">
+              Marvel Men's Regular Fit T-Shirt
+            </h2>
+            <p class="card-text h-7"></p>
+
+            <div class="card-vertical-footer mt-1">
+              <span class="current-price">
+                <strong>₹379</strong>
+              </span>
+              <span class="earlier-price">₹899</span>
+              <span class="pct-off"><strong>58% off</strong></span>
+            </div>
+
+            <button
+              class="bg-add-cart bg-add-cart-hover btn fw-bold m-0 text-slate-800"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </li>
+
+        <li>
+          <div class="card overflow-hidden card-vertical shadow-light w-25">
+            <div class="card-vertical-header">
+              <span class="status-badge text-center w-6p5"
+                >3 <i class="fas fa-star"></i
+              ></span>
+
+              <button class="bg-red-50 card-icon-btn ml-auto">
+                <i class="fas fa-heart m-auto"></i>
+              </button>
+            </div>
+
+            <img
+              class="card-vertical-img"
+              src="../assets/jpegs/iron-man-bobblehead.jpg"
+              alt="iron man bobblehead jpg"
+            />
+
+            <h2 class="card-head fs-2 h-3p5">Iron Man Bobblehead</h2>
+            <p class="card-text h-7"></p>
+
+            <div class="card-vertical-footer mt-1">
+              <span class="current-price">
+                <strong>₹379</strong>
+              </span>
+              <span class="earlier-price">₹899</span>
+              <span class="pct-off"><strong>58% off</strong></span>
+            </div>
+
+            <button
+              class="bg-add-cart bg-add-cart-hover btn fw-bold m-0 text-slate-800"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </li>
+      </ul>
+    </main>
+
+    <footer class="bg-red-50 min-h-15">
+      <div class="container flex flex-wrap justify-c-sa py-1p5 px-2">
+        <div>
+          <div class="fs-1p7 fw-bold my-1 text-slate-800">Quick Links</div>
+
+          <ul class="mx-1">
+            <li>
+              <a class="link" href="../index.html">Home</a>
+            </li>
+            <li class="my-1">
+              <a class="link" href="products.html">Products</a>
+            </li>
+            <li>
+              <a class="link" href="cart.html">My Cart</a>
+            </li>
+            <li class="my-1">
+              <a class="link" href="wishlist.html">My Wish List</a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="fs-1p7 fw-bold my-1 text-slate-800">Connect with me</div>
+
+          <ul class="flex">
+            <li class="mx-1 translate-y">
+              <a
+                href="https://twitter.com/hsnice16"
+                class="fs-2 link"
+                target="_blank"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </li>
+            <li class="mx-1 translate-y">
+              <a
+                href="https://github.com/hsnice16/"
+                class="fs-2 link"
+                target="_blank"
+                ><i class="fab fa-github"></i
+              ></a>
+            </li>
+            <li class="mx-1 translate-y">
+              <a
+                href="https://www.linkedin.com/in/hsnice16/"
+                target="_blank"
+                class="fs-2 link"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </li>
+            <li class="mx-1 translate-y">
+              <a
+                href="https://www.instagram.com/hsnice16/"
+                target="_blank"
+                class="fs-2 link"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
