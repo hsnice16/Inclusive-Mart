@@ -1,0 +1,44 @@
+.category-card {
+  cursor: pointer;
+  flex-direction: column;
+  width: 30rem;
+}
+
+.hero-img-container {
+  overflow: hidden;
+  border-radius: 0.5rem;
+}
+
+.hero-img-container > img {
+  vertical-align: bottom;
+}
+
+/** Media Query **/
+
+@media only screen and (max-width: 43em) {
+  .category-card {
+    max-width: 22rem;
+  }
+
+  .hero-img-container {
+    display: flex;
+    height: 15rem;
+  }
+}
+
+@media only screen and (max-width: 40em) {
+  .card.w-24 {
+    max-width: 22rem;
+  }
+}
+
+@media only screen and (max-width: 28em) {
+  .category-card {
+    max-width: 18rem;
+  }
+
+  .card.w-24 {
+    width: 30rem;
+    max-width: 30rem;
+  }
+}

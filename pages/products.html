@@ -31,44 +31,34 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../app.css" />
+    <link rel="stylesheet" href="../css/pages/products.css" />
   </head>
-  <body class="bg-slate-50 fs-1p6">
-    <header class="bg-stone">
-      <nav class="align-i-ctr container flex justify-c-sb py-1 px-2">
-        <div class="align-i-ctr flex justify-c-sb">
+  <body>
+    <header>
+      <nav class="container navbar-align px-2 py-1">
+        <div class="navbar-align">
           <img
+            loading="lazy"
             class="img-brand-logo"
             src="../assets/brand-logos/logo-bg-stone.png"
-            alt="flaticon cart logo"
+            alt="inclusive mart brand logo"
           />
 
-          <a class="flex flex-direction-col ml-1" href="../index.html">
-            <span class="fs-1p7 text-white">Inclusive</span>
-            <span class="mart-text text-red-500">Mart</span>
+          <a class="brand-name" href="../index.html">
+            <span>Inclusive</span>
+            <span class="mart-text">Mart</span>
           </a>
         </div>
 
-        <form
-          class="align-i-ctr bg-white border-r-0p2 flex fs-1p5 h-3p5 justify-c-sb overflow-hidden px-1"
-        >
-          <input
-            class="border-none fs-1p6 outline-none p-0p5 text-slate-800 w-25"
-            type="text"
-            placeholder="search for product"
-          />
-          <button
-            class="bg-red-500-hover btn btn-error-solid h-100pct mr-n1 py-0p5 px-1p5"
-            type="submit"
-          >
+        <form class="navbar-form">
+          <input type="text" placeholder="search for product" />
+          <button type="submit">
             <i class="fas fa-search"></i>
           </button>
         </form>
 
-        <div class="align-i-ctr flex justify-c-sb">
-          <button
-            id="btn-login"
-            class="btn bg-white bg-white-hover border-r-0p2 translate-y"
-          >
+        <div class="navbar-align">
+          <button id="btn-login" class="navbar-btn-log translate-y">
             Log In
           </button>
 
@@ -83,18 +73,27 @@
           </a>
         </div>
       </nav>
+      <div class="navbar-md-container">
+        <form class="navbar-form">
+          <input type="text" placeholder="search for product" />
+          <button type="submit">
+            <i class="fas fa-search"></i>
+          </button>
+        </form>
+        <button id="btn-md-login" class="navbar-btn-log translate-y">
+          Log In
+        </button>
+      </div>
     </header>
 
     <div class="container flex min-h-85 text-slate-600">
-      <aside class="bg-white py-3 shrink-0 w-24">
-        <div
-          class="align-i-ctr border-bottom-thin border-slate-300 border-bottom-solid flex p-2"
-        >
+      <aside class="filter-container shrink-0">
+        <div>
           <h2 class="fs-2">Filters</h2>
-          <span class="link cursor-ptr fw-normal ml-auto"> Clear All </span>
+          <button class="bg-unset border-none fw-normal link">Clear All</button>
         </div>
 
-        <ul class="border-bottom-thin border-slate-300 border-bottom-solid p-2">
+        <ul>
           <h3 class="mb-2">Sort by</h3>
 
           <li class="my-0p5 ml-1">
@@ -106,8 +105,8 @@
                 id="low-to-high"
                 value="Low to High"
               />
-              Price - Low to High</label
-            >
+              Price - Low to High
+            </label>
           </li>
 
           <li class="my-0p5 ml-1">
@@ -119,12 +118,12 @@
                 id="high-to-low"
                 value="High to Low"
               />
-              Price - High to Low</label
-            >
+              Price - High to Low
+            </label>
           </li>
         </ul>
 
-        <ul class="border-bottom-thin border-slate-300 border-bottom-solid p-2">
+        <ul>
           <h3 class="mb-2">Category</h3>
 
           <li class="my-0p5 ml-1">
@@ -136,8 +135,8 @@
                 id="bobbleheads"
                 value="Bobblehead's"
               />
-              Bobblehead's</label
-            >
+              Bobblehead's
+            </label>
           </li>
 
           <li class="my-0p5 ml-1">
@@ -149,8 +148,8 @@
                 id="mens-clothing"
                 value="Men's Clothing"
               />
-              Men's Clothing</label
-            >
+              Men's Clothing
+            </label>
           </li>
 
           <li class="my-0p5 ml-1">
@@ -162,8 +161,8 @@
                 id="kids-clothing"
                 value="Kid's Clothing"
               />
-              Kid's Clothing</label
-            >
+              Kid's Clothing
+            </label>
           </li>
         </ul>
 
@@ -192,26 +191,149 @@
       </aside>
 
       <main class="p-3">
+        <button
+          class="btn-md-filter filter-md-position shadow-light shadow-slate-hover"
+        >
+          <i class="fas fa-filter"></i>
+        </button>
+
+        <div class="filter-md-container filter-md-position">
+          <div>
+            <h2 class="fs-2">Filters</h2>
+            <div>
+              <button class="bg-unset border-none fw-normal link mx-1">
+                Clear All
+              </button>
+              <button
+                id="btn-close-md-filter"
+                class="bg-unset border-none fw-normal link"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+
+          <ul>
+            <h3 class="mb-2">Sort by</h3>
+
+            <li class="my-0p5 ml-1">
+              <label class="cursor-ptr" for="md-low-to-high">
+                <input
+                  class="cursor-ptr mr-1"
+                  type="radio"
+                  name="price"
+                  id="md-low-to-high"
+                  value="Low to High"
+                />
+                Price - Low to High
+              </label>
+            </li>
+
+            <li class="my-0p5 ml-1">
+              <label class="cursor-ptr" for="md-high-to-low">
+                <input
+                  class="cursor-ptr mr-1"
+                  type="radio"
+                  name="price"
+                  id="md-high-to-low"
+                  value="High to Low"
+                />
+                Price - High to Low
+              </label>
+            </li>
+          </ul>
+
+          <ul>
+            <h3 class="mb-2">Category</h3>
+
+            <li class="my-0p5 ml-1">
+              <label class="cursor-ptr" for="md-bobbleheads">
+                <input
+                  class="cursor-ptr mr-1"
+                  type="checkbox"
+                  name="category"
+                  id="md-bobbleheads"
+                  value="Bobblehead's"
+                />
+                Bobblehead's
+              </label>
+            </li>
+
+            <li class="my-0p5 ml-1">
+              <label class="cursor-ptr" for="md-mens-clothing">
+                <input
+                  class="cursor-ptr mr-1"
+                  type="checkbox"
+                  name="category"
+                  id="md-mens-clothing"
+                  value="Men's Clothing"
+                />
+                Men's Clothing
+              </label>
+            </li>
+
+            <li class="my-0p5 ml-1">
+              <label class="cursor-ptr" for="md-kids-clothing">
+                <input
+                  class="cursor-ptr mr-1"
+                  type="checkbox"
+                  name="category"
+                  id="md-kids-clothing"
+                  value="Kid's Clothing"
+                />
+                Kid's Clothing
+              </label>
+            </li>
+          </ul>
+
+          <ul class="p-2">
+            <h3 class="mb-2">Ratings</h3>
+
+            <li class="flex justify-c-sb my-0p5 ml-1">
+              <span class="fs-1p5 fw-bold">1</span>
+              <span class="fs-1p5 fw-bold">2</span>
+              <span class="fs-1p5 fw-bold">3</span>
+              <span class="fs-1p5 fw-bold">4</span>
+              <span class="fs-1p5 fw-bold">5</span>
+            </li>
+
+            <li class="my-0p5 ml-1">
+              <input
+                type="range"
+                min="1"
+                max="5"
+                value="2"
+                step="0.1"
+                class="cursor-ptr w-100pct"
+              />
+            </li>
+          </ul>
+        </div>
+
         <section>
           <h1 class="fs-3 my-2 mx-0p5">Bobblehead's</h1>
 
           <ul class="flex flex-wrap my-3">
             <li class="m-0p5">
-              <div class="card overflow-hidden card-vertical shadow-light w-25">
+              <div class="card card-vertical w-25">
                 <div class="card-vertical-header">
-                  <span class="status-badge text-center w-6p5"
-                    >3+ <i class="fas fa-star"></i
-                  ></span>
+                  <span class="status-badge text-center w-6p5">
+                    3+ <i class="fas fa-star"></i>
+                  </span>
 
-                  <button class="bg-red-50 card-icon-btn ml-auto">
+                  <button class="bg-red-50 card-icon-btn ml-auto tooltip">
                     <i class="fas fa-heart m-auto"></i>
+                    <span class="tooltip-left tooltip-text">
+                      remove from wishlist
+                    </span>
                   </button>
                 </div>
 
                 <img
+                  loading="lazy"
                   class="card-vertical-img"
                   src="../assets/jpegs/hulk-bobblehead.jpg"
-                  alt="hulk bobblehead jpg"
+                  alt="hulk bobblehead"
                 />
 
                 <h2 class="card-head fs-2 h-3p5">Hulk Bobblehead</h2>
@@ -228,30 +350,30 @@
                   <span class="pct-off"><strong>76% off</strong></span>
                 </div>
 
-                <button
-                  class="bg-add-cart bg-add-cart-hover btn m-0 fw-bold text-slate-800"
-                >
-                  Add to Cart
-                </button>
+                <button class="btn btn-add-to-cart">Add to Cart</button>
               </div>
             </li>
 
             <li class="m-0p5">
-              <div class="card overflow-hidden card-vertical shadow-light w-25">
+              <div class="card card-vertical w-25">
                 <div class="card-vertical-header">
-                  <span class="status-badge text-center w-6p5"
-                    >3 <i class="fas fa-star"></i
-                  ></span>
+                  <span class="status-badge text-center w-6p5">
+                    3 <i class="fas fa-star"></i>
+                  </span>
 
-                  <button class="card-icon-btn ml-auto">
+                  <button class="card-icon-btn ml-auto tooltip">
                     <i class="far fa-heart m-auto"></i>
+                    <span class="tooltip-left tooltip-text">
+                      add to wishlist
+                    </span>
                   </button>
                 </div>
 
                 <img
+                  loading="lazy"
                   class="card-vertical-img"
                   src="../assets/jpegs/iron-man-bobblehead.jpg"
-                  alt="iron man bobblehead jpg"
+                  alt="iron man bobblehead"
                 />
 
                 <h2 class="card-head fs-2 h-3p5">Iron Man Bobblehead</h2>
@@ -268,30 +390,30 @@
                   <span class="pct-off"><strong>58% off</strong></span>
                 </div>
 
-                <button
-                  class="bg-add-cart-dark bg-add-cart-hover btn m-0 fw-bold text-slate-800"
-                >
-                  Go to Cart
-                </button>
+                <button class="btn btn-add-to-cart">Go to Cart</button>
               </div>
             </li>
 
             <li class="m-0p5">
-              <div class="card overflow-hidden card-vertical shadow-light w-25">
+              <div class="card card-vertical w-25">
                 <div class="card-vertical-header">
-                  <span class="status-badge text-center w-6p5"
-                    >3+ <i class="fas fa-star"></i
-                  ></span>
+                  <span class="status-badge text-center w-6p5">
+                    3+ <i class="fas fa-star"></i>
+                  </span>
 
-                  <button class="bg-red-50 card-icon-btn ml-auto">
+                  <button class="bg-red-50 card-icon-btn ml-auto tooltip">
                     <i class="fas fa-heart m-auto"></i>
+                    <span class="tooltip-left tooltip-text">
+                      remove from wishlist
+                    </span>
                   </button>
                 </div>
 
                 <img
+                  loading="lazy"
                   class="card-vertical-img"
                   src="../assets/jpegs/hulk-bobblehead.jpg"
-                  alt="hulk bobblehead jpg"
+                  alt="hulk bobblehead"
                 />
 
                 <h2 class="card-head fs-2 h-3p5">Hulk Bobblehead</h2>
@@ -308,30 +430,30 @@
                   <span class="pct-off"><strong>76% off</strong></span>
                 </div>
 
-                <button
-                  class="bg-add-cart bg-add-cart-hover btn m-0 fw-bold text-slate-800"
-                >
-                  Add to Cart
-                </button>
+                <button class="btn btn-add-to-cart">Add to Cart</button>
               </div>
             </li>
 
             <li class="m-0p5">
-              <div class="card overflow-hidden card-vertical shadow-light w-25">
+              <div class="card card-vertical w-25">
                 <div class="card-vertical-header">
-                  <span class="status-badge text-center w-6p5"
-                    >3 <i class="fas fa-star"></i
-                  ></span>
+                  <span class="status-badge text-center w-6p5">
+                    3 <i class="fas fa-star"></i>
+                  </span>
 
-                  <button class="card-icon-btn ml-auto">
+                  <button class="card-icon-btn ml-auto tooltip">
                     <i class="far fa-heart m-auto"></i>
+                    <span class="tooltip-left tooltip-text">
+                      add to wishlist
+                    </span>
                   </button>
                 </div>
 
                 <img
+                  loading="lazy"
                   class="card-vertical-img"
                   src="../assets/jpegs/iron-man-bobblehead.jpg"
-                  alt="iron man bobblehead jpg"
+                  alt="iron man bobblehead"
                 />
 
                 <h2 class="card-head fs-2 h-3p5">Iron Man Bobblehead</h2>
@@ -348,30 +470,30 @@
                   <span class="pct-off"><strong>58% off</strong></span>
                 </div>
 
-                <button
-                  class="bg-add-cart-dark bg-add-cart-hover btn m-0 fw-bold text-slate-800"
-                >
-                  Go to Cart
-                </button>
+                <button class="btn btn-add-to-cart">Go to Cart</button>
               </div>
             </li>
 
             <li class="m-0p5">
-              <div class="card overflow-hidden card-vertical shadow-light w-25">
+              <div class="card card-vertical w-25">
                 <div class="card-vertical-header">
-                  <span class="status-badge text-center w-6p5"
-                    >3+ <i class="fas fa-star"></i
-                  ></span>
+                  <span class="status-badge text-center w-6p5">
+                    3+ <i class="fas fa-star"></i>
+                  </span>
 
-                  <button class="bg-red-50 card-icon-btn ml-auto">
+                  <button class="bg-red-50 card-icon-btn ml-auto tooltip">
                     <i class="fas fa-heart m-auto"></i>
+                    <span class="tooltip-left tooltip-text">
+                      remove from wishlist
+                    </span>
                   </button>
                 </div>
 
                 <img
+                  loading="lazy"
                   class="card-vertical-img"
                   src="../assets/jpegs/hulk-bobblehead.jpg"
-                  alt="hulk bobblehead jpg"
+                  alt="hulk bobblehead"
                 />
 
                 <h2 class="card-head fs-2 h-3p5">Hulk Bobblehead</h2>
@@ -388,30 +510,30 @@
                   <span class="pct-off"><strong>76% off</strong></span>
                 </div>
 
-                <button
-                  class="bg-add-cart bg-add-cart-hover btn m-0 fw-bold text-slate-800"
-                >
-                  Add to Cart
-                </button>
+                <button class="btn btn-add-to-cart">Add to Cart</button>
               </div>
             </li>
 
             <li class="m-0p5">
-              <div class="card overflow-hidden card-vertical shadow-light w-25">
+              <div class="card card-vertical w-25">
                 <div class="card-vertical-header">
-                  <span class="status-badge text-center w-6p5"
-                    >3 <i class="fas fa-star"></i
-                  ></span>
+                  <span class="status-badge text-center w-6p5">
+                    3 <i class="fas fa-star"></i>
+                  </span>
 
-                  <button class="card-icon-btn ml-auto">
+                  <button class="card-icon-btn ml-auto tooltip">
                     <i class="far fa-heart m-auto"></i>
+                    <span class="tooltip-left tooltip-text">
+                      add to wishlist
+                    </span>
                   </button>
                 </div>
 
                 <img
+                  loading="lazy"
                   class="card-vertical-img"
                   src="../assets/jpegs/iron-man-bobblehead.jpg"
-                  alt="iron man bobblehead jpg"
+                  alt="iron man bobblehead"
                 />
 
                 <h2 class="card-head fs-2 h-3p5">Iron Man Bobblehead</h2>
@@ -428,30 +550,30 @@
                   <span class="pct-off"><strong>58% off</strong></span>
                 </div>
 
-                <button
-                  class="bg-add-cart-dark bg-add-cart-hover btn m-0 fw-bold text-slate-800"
-                >
-                  Go to Cart
-                </button>
+                <button class="btn btn-add-to-cart">Go to Cart</button>
               </div>
             </li>
 
             <li class="m-0p5">
-              <div class="card overflow-hidden card-vertical shadow-light w-25">
+              <div class="card card-vertical w-25">
                 <div class="card-vertical-header">
-                  <span class="status-badge text-center w-6p5"
-                    >3+ <i class="fas fa-star"></i
-                  ></span>
+                  <span class="status-badge text-center w-6p5">
+                    3+ <i class="fas fa-star"></i>
+                  </span>
 
-                  <button class="bg-red-50 card-icon-btn ml-auto">
+                  <button class="bg-red-50 card-icon-btn ml-auto tooltip">
                     <i class="fas fa-heart m-auto"></i>
+                    <span class="tooltip-left tooltip-text">
+                      remove from wishlist
+                    </span>
                   </button>
                 </div>
 
                 <img
+                  loading="lazy"
                   class="card-vertical-img"
                   src="../assets/jpegs/hulk-bobblehead.jpg"
-                  alt="hulk bobblehead jpg"
+                  alt="hulk bobblehead"
                 />
 
                 <h2 class="card-head fs-2 h-3p5">Hulk Bobblehead</h2>
@@ -468,11 +590,7 @@
                   <span class="pct-off"><strong>76% off</strong></span>
                 </div>
 
-                <button
-                  class="bg-add-cart bg-add-cart-hover btn m-0 fw-bold text-slate-800"
-                >
-                  Add to Cart
-                </button>
+                <button class="btn btn-add-to-cart">Add to Cart</button>
               </div>
             </li>
           </ul>
@@ -486,15 +604,11 @@
           <div class="fs-1p7 fw-bold my-1 text-slate-800">Quick Links</div>
 
           <ul class="mx-1">
-            <li>
-              <a class="link" href="../index.html">Home</a>
-            </li>
+            <li><a class="link" href="../index.html">Home</a></li>
             <li class="my-1">
               <a class="link" href="products.html">Products</a>
             </li>
-            <li>
-              <a class="link" href="cart.html">My Cart</a>
-            </li>
+            <li><a class="link" href="cart.html">My Cart</a></li>
             <li class="my-1">
               <a class="link" href="wishlist.html">My Wish List</a>
             </li>
@@ -510,32 +624,36 @@
                 href="https://twitter.com/hsnice16"
                 class="fs-2 link"
                 target="_blank"
-                ><i class="fab fa-twitter"></i
-              ></a>
+              >
+                <i class="fab fa-twitter"></i>
+              </a>
             </li>
             <li class="mx-1 translate-y">
               <a
                 href="https://github.com/hsnice16/"
                 class="fs-2 link"
                 target="_blank"
-                ><i class="fab fa-github"></i
-              ></a>
+              >
+                <i class="fab fa-github"></i>
+              </a>
             </li>
             <li class="mx-1 translate-y">
               <a
                 href="https://www.linkedin.com/in/hsnice16/"
                 target="_blank"
                 class="fs-2 link"
-                ><i class="fab fa-linkedin-in"></i
-              ></a>
+              >
+                <i class="fab fa-linkedin-in"></i>
+              </a>
             </li>
             <li class="mx-1 translate-y">
               <a
                 href="https://www.instagram.com/hsnice16/"
                 target="_blank"
                 class="fs-2 link"
-                ><i class="fab fa-instagram"></i
-              ></a>
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
             </li>
           </ul>
         </div>
@@ -546,6 +664,24 @@
       document.querySelector("#btn-login").addEventListener("click", () => {
         window.open("signin.html", "_self");
       });
+
+      document.querySelector("#btn-md-login").addEventListener("click", () => {
+        window.open("signin.html", "_self");
+      });
+
+      document.querySelector(".btn-md-filter").addEventListener("click", () => {
+        document
+          .querySelector(".filter-md-container")
+          .classList.add("show-md-filter");
+      });
+
+      document
+        .querySelector("#btn-close-md-filter")
+        .addEventListener("click", () => {
+          document
+            .querySelector(".filter-md-container")
+            .classList.remove("show-md-filter");
+        });
     </script>
   </body>
 </html>
