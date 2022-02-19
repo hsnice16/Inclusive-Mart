@@ -31,44 +31,34 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../app.css" />
+    <link rel="stylesheet" href="../css/pages/sign_in_up.css" />
   </head>
-  <body class="bg-slate-50 fs-1p6">
-    <header class="bg-stone">
-      <nav class="align-i-ctr container flex justify-c-sb py-1 px-2">
-        <div class="align-i-ctr flex justify-c-sb">
+  <body>
+    <header>
+      <nav class="container navbar-align px-2 py-1">
+        <div class="navbar-align">
           <img
+            loading="lazy"
             class="img-brand-logo"
             src="../assets/brand-logos/logo-bg-stone.png"
-            alt="flaticon cart logo"
+            alt="inclusive mart brand logo"
           />
 
-          <a class="flex flex-direction-col ml-1" href="../index.html">
-            <span class="fs-1p7 text-white">Inclusive</span>
-            <span class="mart-text text-red-500">Mart</span>
+          <a class="brand-name" href="../index.html">
+            <span>Inclusive</span>
+            <span class="mart-text">Mart</span>
           </a>
         </div>
 
-        <form
-          class="align-i-ctr bg-white border-r-0p2 flex fs-1p5 h-3p5 justify-c-sb overflow-hidden px-1"
-        >
-          <input
-            class="border-none fs-1p6 outline-none p-0p5 text-slate-800 w-25"
-            type="text"
-            placeholder="search for product"
-          />
-          <button
-            class="bg-red-500-hover btn btn-error-solid h-100pct mr-n1 py-0p5 px-1p5"
-            type="submit"
-          >
+        <form class="navbar-form">
+          <input type="text" placeholder="search for product" />
+          <button type="submit">
             <i class="fas fa-search"></i>
           </button>
         </form>
 
-        <div class="align-i-ctr flex justify-c-sb">
-          <button
-            id="btn-login"
-            class="btn bg-white bg-white-hover border-r-0p2 translate-y"
-          >
+        <div class="navbar-align">
+          <button id="btn-login" class="navbar-btn-log translate-y">
             Log In
           </button>
 
@@ -83,14 +73,26 @@
           </a>
         </div>
       </nav>
+      <div class="navbar-md-container">
+        <form class="navbar-form">
+          <input type="text" placeholder="search for product" />
+          <button type="submit">
+            <i class="fas fa-search"></i>
+          </button>
+        </form>
+        <button id="btn-md-login" class="navbar-btn-log translate-y">
+          Log In
+        </button>
+      </div>
     </header>
 
-    <main class="container flex min-h-85 p-3 text-slate-600">
-      <div class="card m-auto shadow-light w-45 overflow-hidden">
+    <main class="container flex main">
+      <div class="card m-auto w-45 overflow-hidden">
         <img
+          loading="lazy"
           class="w-4"
           src="../assets/jpegs/dr-strange.jpg"
-          alt="unsplash dr. strange jpg"
+          alt="dr. strange poster"
         />
 
         <form class="border-r-unset form p-2 max-w-100pct shadow-unset">
@@ -161,15 +163,13 @@
             Privacy Policy.
           </span>
 
-          <button class="btn btn-error-solid border-r-0p2 mx-0 w-100pct">
+          <button class="btn btn-error-solid mx-0 w-100pct">
             Create New Account
           </button>
 
-          <a
-            class="inline-block fw-bold mt-1 text-center text-slate-600 text-slate-800-hover w-100pct"
-            href="signin.html"
-            >Already using Inclusive Mart? Log In</a
-          >
+          <a class="form-signup-link" href="signin.html">
+            Already using Inclusive Mart? Log In
+          </a>
         </form>
       </div>
     </main>
@@ -180,15 +180,11 @@
           <div class="fs-1p7 fw-bold my-1 text-slate-800">Quick Links</div>
 
           <ul class="mx-1">
-            <li>
-              <a class="link" href="../index.html">Home</a>
-            </li>
+            <li><a class="link" href="../index.html">Home</a></li>
             <li class="my-1">
               <a class="link" href="products.html">Products</a>
             </li>
-            <li>
-              <a class="link" href="cart.html">My Cart</a>
-            </li>
+            <li><a class="link" href="cart.html">My Cart</a></li>
             <li class="my-1">
               <a class="link" href="wishlist.html">My Wish List</a>
             </li>
@@ -204,32 +200,36 @@
                 href="https://twitter.com/hsnice16"
                 class="fs-2 link"
                 target="_blank"
-                ><i class="fab fa-twitter"></i
-              ></a>
+              >
+                <i class="fab fa-twitter"></i>
+              </a>
             </li>
             <li class="mx-1 translate-y">
               <a
                 href="https://github.com/hsnice16/"
                 class="fs-2 link"
                 target="_blank"
-                ><i class="fab fa-github"></i
-              ></a>
+              >
+                <i class="fab fa-github"></i>
+              </a>
             </li>
             <li class="mx-1 translate-y">
               <a
                 href="https://www.linkedin.com/in/hsnice16/"
                 target="_blank"
                 class="fs-2 link"
-                ><i class="fab fa-linkedin-in"></i
-              ></a>
+              >
+                <i class="fab fa-linkedin-in"></i>
+              </a>
             </li>
             <li class="mx-1 translate-y">
               <a
                 href="https://www.instagram.com/hsnice16/"
                 target="_blank"
                 class="fs-2 link"
-                ><i class="fab fa-instagram"></i
-              ></a>
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
             </li>
           </ul>
         </div>
@@ -238,6 +238,10 @@
 
     <script>
       document.querySelector("#btn-login").addEventListener("click", () => {
+        window.open("signin.html", "_self");
+      });
+
+      document.querySelector("#btn-md-login").addEventListener("click", () => {
         window.open("signin.html", "_self");
       });
     </script>
