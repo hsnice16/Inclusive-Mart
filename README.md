@@ -16,13 +16,14 @@ Inclusive Mart is an e-commerce platform for marvel fans, Get Your Best Deal.
 
 ## Contains
 
-Currently, it contains screens for the following page
-- Home (https://inclusive-mart.netlify.app/)
-- Products (https://inclusive-mart.netlify.app/pages/products.html)
-- Cart Management (https://inclusive-mart.netlify.app/pages/cart.html)
-- Wishlist Management (https://inclusive-mart.netlify.app/pages/wishlist.html)
-- Log In (https://inclusive-mart.netlify.app/pages/signin.html)
-- Sign Up (https://inclusive-mart.netlify.app/pages/signup.html)
+Currently, it contains screens for the following pages
+
+- Home (<a href="https://inclusive-mart.netlify.app/" target="_blank">Inclusive Mart Home</a>)
+- Products (<a href="https://inclusive-mart.netlify.app/pages/products.html" target="_blank">Inclusive Mart Products</a>)
+- Cart Management (<a href="https://inclusive-mart.netlify.app/pages/cart.html" target="_blank">Inclusive Mart Cart</a>)
+- Wishlist Management (<a href="https://inclusive-mart.netlify.app/pages/wishlist.html" target="_blank">Inclusive Mart Wishlist</a>)
+- Log In (<a href="https://inclusive-mart.netlify.app/pages/signin.html" target="_blank">Inclusive Mart Log In</a>)
+- Sign Up (<a href="https://inclusive-mart.netlify.app/pages/signup.html" target="_blank">Inclusive Mart Sign Up</a>)
 
 ---
 
